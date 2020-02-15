@@ -5964,6 +5964,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114292420591188288, guid: 70e2d26830539e54aaf661e9b25be164,
+        type: 3}
+      propertyPath: objetivo
+      value: 
+      objectReference: {fileID: 1862346944}
     - target: {fileID: 1812565566747561288, guid: 70e2d26830539e54aaf661e9b25be164,
         type: 3}
       propertyPath: m_Name
@@ -7734,6 +7739,12 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1352491790 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1812565566747561288, guid: 70e2d26830539e54aaf661e9b25be164,
+    type: 3}
+  m_PrefabInstance: {fileID: 721193760}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1671889098
 GameObject:
   m_ObjectHideFlags: 0
@@ -9383,6 +9394,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1862346944 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1812565566747561288, guid: 70e2d26830539e54aaf661e9b25be164,
+    type: 3}
+  m_PrefabInstance: {fileID: 1812565568098786407}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1908810521
 GameObject:
   m_ObjectHideFlags: 0
@@ -12429,6 +12446,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114292420591188288, guid: 70e2d26830539e54aaf661e9b25be164,
+        type: 3}
+      propertyPath: objetivo
+      value: 
+      objectReference: {fileID: 1352491790}
     - target: {fileID: 1812565566747561288, guid: 70e2d26830539e54aaf661e9b25be164,
         type: 3}
       propertyPath: m_Name
@@ -12553,6 +12575,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2087688179608304100, guid: c766f771f563fbd4f98152ece04efdfa,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.1981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 2087688179608304100, guid: c766f771f563fbd4f98152ece04efdfa,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.18596475
+      objectReference: {fileID: 0}
+    - target: {fileID: 2087688179608304100, guid: c766f771f563fbd4f98152ece04efdfa,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.18596475
+      objectReference: {fileID: 0}
     - target: {fileID: 2087688179608304101, guid: c766f771f563fbd4f98152ece04efdfa,
         type: 3}
       propertyPath: objetivo
@@ -12576,6 +12613,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Personaje
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055766287465526016, guid: 5fdeb4d83ba988043aff49dd2c04076e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3055766287465526018, guid: 5fdeb4d83ba988043aff49dd2c04076e,
         type: 3}
