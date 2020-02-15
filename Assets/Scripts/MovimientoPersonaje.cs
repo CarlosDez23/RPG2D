@@ -10,7 +10,8 @@ public class MovimientoPersonaje : MonoBehaviour
     Animator animator;
     Rigidbody2D rigidbody; 
     Vector2 movimiento;
-
+    
+    //Prueba de carlos
     void Start()
     {
         animator = GetComponent<Animator>(); 
