@@ -12,6 +12,7 @@ public class MovimientoPersonaje : MonoBehaviour
     Vector2 movimiento;
     
     //Prueba de carlos
+    //Prueba de Adrian
     void Start()
     {
         animator = GetComponent<Animator>(); 
