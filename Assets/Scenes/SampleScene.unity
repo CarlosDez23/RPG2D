@@ -5967,7 +5967,7 @@ PrefabInstance:
     - target: {fileID: 1812565566747561288, guid: 70e2d26830539e54aaf661e9b25be164,
         type: 3}
       propertyPath: m_Name
-      value: Teletransporte (1)
+      value: Cascada_a_puerto
       objectReference: {fileID: 0}
     - target: {fileID: 1812565566747561302, guid: 70e2d26830539e54aaf661e9b25be164,
         type: 3}
@@ -12432,7 +12432,7 @@ PrefabInstance:
     - target: {fileID: 1812565566747561288, guid: 70e2d26830539e54aaf661e9b25be164,
         type: 3}
       propertyPath: m_Name
-      value: Teletransporte
+      value: Puerto_a_cascada
       objectReference: {fileID: 0}
     - target: {fileID: 1812565566747561302, guid: 70e2d26830539e54aaf661e9b25be164,
         type: 3}
