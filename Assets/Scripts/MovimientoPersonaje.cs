@@ -10,6 +10,7 @@ public class MovimientoPersonaje : MonoBehaviour
     Animator animator;
     Rigidbody2D rigidbody; 
     Vector2 movimiento;
+    CircleCollider2D colliderAtaque; 
     
     //Prueba de carlos
     //Prueba de Adrian
@@ -17,6 +18,9 @@ public class MovimientoPersonaje : MonoBehaviour
     {
         animator = GetComponent<Animator>(); 
         rigidbody = GetComponent<Rigidbody2D>(); 
+        colliderAtaque = transform.GetChild(0).GetComponent<CircleCollider2D>(); 
+        //Lo desactivamos desde el principio
+        colliderAtaque.enabled = false; 
     }
 
     void Update()
@@ -37,9 +41,34 @@ public class MovimientoPersonaje : MonoBehaviour
             animator.SetBool("andando", false); 
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        //Miramos el estado actual en el animador
+        AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
+        bool atacando = info.IsName("Jugador_atacando");
+        //No dejamos atacar hasta que no termine la animación 
+        if (Input.GetKeyDown(KeyCode.Space) && !atacando)
         {
             animator.SetTrigger("atacando"); 
+        }
+
+        //Actualizamos la posición del collider de ataque en función de donde está mirando el personaje 
+        if (movimiento != Vector2.zero)
+        {
+            colliderAtaque.offset = new Vector2(movimiento.x/2, movimiento.y/2);
+        }
+
+        if (atacando)
+        {
+            //Normalizedtime guarda el tiempo que dura la animación
+            float tiempoAnimacion = info.normalizedTime; 
+            //Si lo dividimos en 3 tercios, y activamos el collider del ataque en el segundo tercio
+            //conseguimos que el collider solo este activo en mitad de la animación
+            if (tiempoAnimacion > 0.33 && tiempoAnimacion < 0.66)
+            {
+                colliderAtaque.enabled = true; 
+            }else
+            {
+                colliderAtaque.enabled = false; 
+            }
         }
     }
 
