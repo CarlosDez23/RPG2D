@@ -262,6 +262,7 @@ GameObject:
   - component: {fileID: 409275102}
   - component: {fileID: 409275104}
   - component: {fileID: 409275103}
+  - component: {fileID: 409275105}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -6096,6 +6097,25 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!95 &409275105
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409275101}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1233472932f25b94bbe2a5f32aa00771, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &470655470
 GameObject:
   m_ObjectHideFlags: 0
@@ -6206,7 +6226,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &651538364
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12998,12 +13018,12 @@ PrefabInstance:
     - target: {fileID: 2087688179608303899, guid: c766f771f563fbd4f98152ece04efdfa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.42
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 2087688179608303899, guid: c766f771f563fbd4f98152ece04efdfa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.02
+      value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: 2087688179608303899, guid: c766f771f563fbd4f98152ece04efdfa,
         type: 3}

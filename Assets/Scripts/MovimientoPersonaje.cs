@@ -36,6 +36,11 @@ public class MovimientoPersonaje : MonoBehaviour
         {
             animator.SetBool("andando", false); 
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            animator.SetTrigger("atacando"); 
+        }
     }
 
     void FixedUpdate()

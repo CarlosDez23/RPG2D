@@ -12,13 +12,23 @@ public class MovimientoCamara : MonoBehaviour
 
     void Start()
     {
-        
+        //Forzamos la resolución de la pantalla
+        Screen.SetResolution(800,800,true); 
     }
 
     
     void Update()
     {
-        
+        if (!Screen.fullScreen || Camera.main.aspect != 1)
+        {
+            Screen.SetResolution(800,800,true); 
+        }
+
+        //Le dejamos al jugador salir de la pantalla completa
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit(); 
+        }
     }
     
     //Se mueve despues del update del movimiento del personaje en cada frame
