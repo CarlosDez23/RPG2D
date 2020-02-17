@@ -6,14 +6,12 @@ public class MovimientoPersonaje : MonoBehaviour
 {   
 
     public float velocidad = 4f; 
-
     Animator animator;
     Rigidbody2D rigidbody; 
     Vector2 movimiento;
     CircleCollider2D colliderAtaque; 
     
-    //Prueba de carlos
-    //Prueba de Adrian
+    //Prueba Inicio Mapa Nivel 2
     void Start()
     {
         animator = GetComponent<Animator>(); 
