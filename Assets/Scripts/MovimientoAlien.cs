@@ -13,10 +13,6 @@ public class MovimientoAlien : MonoBehaviour
     Rigidbody2D rigidbody2;
     GameObject personaje;
 
-
-    Vector2 mov;
-
-
     // Start is called before the first frame update
     void Start()
     {
