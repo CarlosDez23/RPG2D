@@ -6,8 +6,8 @@ public class MovimientoAlien : MonoBehaviour
 {
     public float velocidad = 4f; 
     public float radioVision;
-    public float radioAtaque;
-    public GameObject per;
+    public float radioAtaque = 1.45f;
+    //public GameObject per;
     Vector3 posicionInicial;
     Animator animator;
     Rigidbody2D rigidbody2;
@@ -17,8 +17,8 @@ public class MovimientoAlien : MonoBehaviour
     void Start()
     {
         //recuperamos al jugador gracias al tag
-        //personaje = GameObject.FindGameObjectWithTag("Player");
-        personaje = per;
+        personaje = GameObject.FindGameObjectWithTag("Player");
+        //personaje = per;
 
         //Guardamos nuestra posicion inicial
         posicionInicial = transform.position;
