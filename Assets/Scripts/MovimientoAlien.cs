@@ -26,8 +26,15 @@ public class MovimientoAlien : MonoBehaviour
         if (mov != Vector2.zero){
             animator.SetFloat("movX",mov.x);
             animator.SetFloat("movY", mov.y);
+            animator.SetBool("Andando", true);
+        }else{
+            animator.SetBool("Andando", false);
         }
         
+        if(Input.GetKeyDown("space"))
+        {
+            animator.SetTrigger("Atacando");
+        }
 
     }
 

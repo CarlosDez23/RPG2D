@@ -183,7 +183,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -194,7 +194,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -218,7 +218,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c4ed2a404f24a24b8459c63b49ddeb2
+      spriteID: ac535aa23bce41145a494d255d5e1088
       vertices: []
       indices: 
       edges: []
@@ -238,7 +238,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6a3093d45d834244b421a67b5aeaf39
+      spriteID: ae7f1ef61aa2372408c23dcb850a0acd
       vertices: []
       indices: 
       edges: []
@@ -249,7 +249,7 @@ TextureImporter:
         serializedVersion: 2
         x: 90
         y: 481
-        width: 17
+        width: 18
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -258,7 +258,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b08e52a322a7e74c871ede6085c513b
+      spriteID: bb9bef25aa51934428772c1077fb6788
       vertices: []
       indices: 
       edges: []
@@ -267,10 +267,10 @@ TextureImporter:
       name: calvo_3
       rect:
         serializedVersion: 2
-        x: 126
-        y: 481
-        width: 23
-        height: 24
+        x: 127
+        y: 480
+        width: 22
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,7 +278,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46e795a41caedfc4e89e4ba94ff31c29
+      spriteID: 1281fce177db8804693719f925582c92
       vertices: []
       indices: 
       edges: []
@@ -298,7 +298,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc6b62c725ef7384b83390ba7d1ab7a6
+      spriteID: 248a230fb85d96e4da8f26eebd03b20b
       vertices: []
       indices: 
       edges: []
@@ -307,10 +307,10 @@ TextureImporter:
       name: calvo_5
       rect:
         serializedVersion: 2
-        x: 202
-        y: 481
-        width: 30
-        height: 24
+        x: 200
+        y: 480
+        width: 32
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,7 +318,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bec49e6bd691065428252d13e47ef684
+      spriteID: a407a758972bc1444b0272c116c211ca
       vertices: []
       indices: 
       edges: []
@@ -328,9 +328,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 245
-        y: 481
+        y: 480
         width: 22
-        height: 24
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,7 +338,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67c00a8d3b7e312499fe37c50b48b7b0
+      spriteID: 4cbefbf27f133e34d9b042996d3d1cf4
       vertices: []
       indices: 
       edges: []
@@ -349,46 +349,6 @@ TextureImporter:
         serializedVersion: 2
         x: 14
         y: 449
-        width: 13
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac1f074eb2d5dd64dab630453d143d02
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: calvo_8
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 449
-        width: 15
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 24e63c6576fefdb4c86765be0e1baace
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: calvo_9
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 449
         width: 14
         height: 24
       alignment: 0
@@ -398,7 +358,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c654696369dbf3d4493d4b45db129b7a
+      spriteID: b6e851c3da9b1e54fba1d2c8e7637560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: calvo_8
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 448
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee14fb27c1292b6459b39b7d6bf0ba29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: calvo_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 448
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532c9f0bdad1a654f95155fb5b783d1a
       vertices: []
       indices: 
       edges: []
@@ -418,7 +418,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b91d2ef09e5c3784089850335c4d414f
+      spriteID: de57daede955e88489c68c8fe8b18562
       vertices: []
       indices: 
       edges: []
@@ -438,7 +438,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58117e4f4931afc45837e9c35ea6cf78
+      spriteID: 1e0c6f900faea0d43b70a883501984b9
       vertices: []
       indices: 
       edges: []
@@ -458,7 +458,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe25e8723a1739f41833ae063d95917c
+      spriteID: a730029e78b0f424a9cbb1bae52cf282
       vertices: []
       indices: 
       edges: []
@@ -478,7 +478,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5e058dab62669541af1f1d86683ce4c
+      spriteID: 3f5b5e407fc581949b90d874ae197b68
       vertices: []
       indices: 
       edges: []
@@ -498,7 +498,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a5bfa07c7f46a0489c88baa1cd8ddca
+      spriteID: c040311c93017ab4fa50b4a17ca06e0e
       vertices: []
       indices: 
       edges: []
@@ -507,9 +507,9 @@ TextureImporter:
       name: calvo_15
       rect:
         serializedVersion: 2
-        x: 50
+        x: 40
         y: 417
-        width: 19
+        width: 29
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -518,7 +518,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f97a0870d6ec7642a8eed5c78587b32
+      spriteID: 811833e98e0bc964a9adc44272f59b42
       vertices: []
       indices: 
       edges: []
@@ -528,9 +528,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 90
-        y: 417
-        width: 17
-        height: 24
+        y: 416
+        width: 27
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -538,7 +538,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57bc0732084cca74db315a5a5eb77c84
+      spriteID: 185398e5e5fbb5845b06673bbec33886
       vertices: []
       indices: 
       edges: []
@@ -547,10 +547,10 @@ TextureImporter:
       name: calvo_17
       rect:
         serializedVersion: 2
-        x: 126
+        x: 127
         y: 417
-        width: 23
-        height: 24
+        width: 22
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -558,7 +558,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e642cd5158e0a94eb42720d8b708112
+      spriteID: 383001e2fadeb884a939a80d5b80c2e3
       vertices: []
       indices: 
       edges: []
@@ -578,7 +578,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54005674cf887de4ab8c538dde5ad65f
+      spriteID: 84ee56089ec040b4683712d60ee6474c
       vertices: []
       indices: 
       edges: []
@@ -598,7 +598,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 460298c34a7117a4bb20698794c16db9
+      spriteID: 0372e9bbc60ee2d4ea1f44d4875840e4
       vertices: []
       indices: 
       edges: []
@@ -618,7 +618,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6f26d720e9ce6c4c9885dfc2bd979d5
+      spriteID: 500d16b3b1153b043941dee33825b9bf
       vertices: []
       indices: 
       edges: []
@@ -627,7 +627,7 @@ TextureImporter:
       name: calvo_21
       rect:
         serializedVersion: 2
-        x: 13
+        x: 12
         y: 385
         width: 13
         height: 25
@@ -638,7 +638,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58397f04707ed624388a65ceefee887c
+      spriteID: 27a58d3e4417ed24ea1f5b236dc7007e
       vertices: []
       indices: 
       edges: []
@@ -647,9 +647,9 @@ TextureImporter:
       name: calvo_22
       rect:
         serializedVersion: 2
-        x: 51
+        x: 40
         y: 385
-        width: 15
+        width: 26
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -658,7 +658,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a04b15f0aeaafab49ba85d8f8bb05001
+      spriteID: 733df31261e500d4fbea1117fe4a01ba
       vertices: []
       indices: 
       edges: []
@@ -678,7 +678,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39c12762933be3843bd54be5a9d76990
+      spriteID: 1361f10cc2f82c345bd1e0e57e7e4e26
       vertices: []
       indices: 
       edges: []
@@ -689,7 +689,7 @@ TextureImporter:
         serializedVersion: 2
         x: 129
         y: 385
-        width: 17
+        width: 16
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -698,7 +698,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2906e34039333da48b5b66ce482a64f7
+      spriteID: da35e23ff2199004ca4bf5e8684c4590
       vertices: []
       indices: 
       edges: []
@@ -707,9 +707,9 @@ TextureImporter:
       name: calvo_25
       rect:
         serializedVersion: 2
-        x: 165
+        x: 164
         y: 385
-        width: 21
+        width: 22
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -718,7 +718,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dccf04bc0b7fd094eaa3f8769f0a5b36
+      spriteID: 31973c8968f45dd4a81c5304372844a5
       vertices: []
       indices: 
       edges: []
@@ -729,7 +729,7 @@ TextureImporter:
         serializedVersion: 2
         x: 205
         y: 385
-        width: 21
+        width: 20
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -738,7 +738,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 028ea800494443f4f82d600aa21fb60d
+      spriteID: 4fd43546c6b6cc6489e46f327d6298f5
       vertices: []
       indices: 
       edges: []
@@ -747,9 +747,9 @@ TextureImporter:
       name: calvo_27
       rect:
         serializedVersion: 2
-        x: 246
+        x: 240
         y: 385
-        width: 18
+        width: 24
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -758,7 +758,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a83a37a45a32bb641adc89f47cfc9850
+      spriteID: 66bff5a183560694883e3865c883d8df
       vertices: []
       indices: 
       edges: []
@@ -778,7 +778,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95cf26e0d99a8ec46b7cb88d3668f242
+      spriteID: 09cc0527fe324f54bbb1bd2b98ed7a83
       vertices: []
       indices: 
       edges: []
@@ -798,7 +798,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2abea673f7d7cbf43864f82a5ce010a7
+      spriteID: dda0389ef0bf6bf49868ed1e0c1e04ce
       vertices: []
       indices: 
       edges: []
@@ -810,7 +810,7 @@ TextureImporter:
         x: 92
         y: 352
         width: 14
-        height: 25
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -818,7 +818,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84265d68d6b8b3643ada8b570e7dffa5
+      spriteID: 1ec6c19406c46dc49a9d5fe0ca39f958
       vertices: []
       indices: 
       edges: []
@@ -829,7 +829,7 @@ TextureImporter:
         serializedVersion: 2
         x: 131
         y: 352
-        width: 15
+        width: 14
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -838,7 +838,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bfe85e5b97390145b4369046d219013
+      spriteID: 618882ca05bbd824bb72e74cd295d0c4
       vertices: []
       indices: 
       edges: []
@@ -849,7 +849,7 @@ TextureImporter:
         serializedVersion: 2
         x: 171
         y: 352
-        width: 15
+        width: 14
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -858,7 +858,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b46ce72462c7db648b76cf9853e7b726
+      spriteID: d667439c9d128374b8dd40124ebd30ab
       vertices: []
       indices: 
       edges: []
@@ -878,7 +878,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c227b64faa2b9a64c885c1dd0aa32d71
+      spriteID: 71309e87bfdf2f54b82349ccc65b891a
       vertices: []
       indices: 
       edges: []
@@ -887,9 +887,9 @@ TextureImporter:
       name: calvo_34
       rect:
         serializedVersion: 2
-        x: 250
+        x: 248
         y: 352
-        width: 14
+        width: 16
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -898,7 +898,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6df3dd463163d4545ae6348bf940d2e2
+      spriteID: 0966ae599257eed4f9717840dbaf59ed
       vertices: []
       indices: 
       edges: []
@@ -918,7 +918,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f491abd8d007b994cb021386ddab0e42
+      spriteID: 56771f4836b549741aeafea3982c5cfa
       vertices: []
       indices: 
       edges: []
@@ -927,10 +927,10 @@ TextureImporter:
       name: calvo_36
       rect:
         serializedVersion: 2
-        x: 14
+        x: 12
         y: 322
-        width: 13
-        height: 24
+        width: 16
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -938,7 +938,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 858fc40991146a3429574e0ff42654b7
+      spriteID: d047d8352a5204044aae2529ed914bea
       vertices: []
       indices: 
       edges: []
@@ -949,7 +949,7 @@ TextureImporter:
         serializedVersion: 2
         x: 51
         y: 322
-        width: 16
+        width: 17
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -958,7 +958,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab5561f73627a77439e22b34c4709712
+      spriteID: 54b6ab5940aa8784187c3bc491aab27c
       vertices: []
       indices: 
       edges: []
@@ -970,7 +970,7 @@ TextureImporter:
         x: 90
         y: 322
         width: 17
-        height: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -978,7 +978,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b003672a90506b4fa0595515a480f23
+      spriteID: 423a0fc730dce904d93a35bf1e7e0ac8
       vertices: []
       indices: 
       edges: []
@@ -989,7 +989,7 @@ TextureImporter:
         serializedVersion: 2
         x: 131
         y: 322
-        width: 16
+        width: 17
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -998,7 +998,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b14e5d7f95c532b49862e8703cbb98dc
+      spriteID: c85506ea85f76be498af4dbb87d55a85
       vertices: []
       indices: 
       edges: []
@@ -1007,10 +1007,10 @@ TextureImporter:
       name: calvo_40
       rect:
         serializedVersion: 2
-        x: 166
-        y: 322
-        width: 18
-        height: 24
+        x: 167
+        y: 320
+        width: 29
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1018,7 +1018,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 688fc7a6b2196554499bc6180432386c
+      spriteID: cb6c2e9f4cbdd6a4a9c9adbf431883dd
       vertices: []
       indices: 
       edges: []
@@ -1038,7 +1038,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b60915fffd82d2243822261fd0a85a3d
+      spriteID: 9209a564c95311b4da1e4f3ec3c8ab28
       vertices: []
       indices: 
       edges: []
@@ -1050,7 +1050,7 @@ TextureImporter:
         x: 245
         y: 322
         width: 17
-        height: 24
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1058,7 +1058,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 020baa5c0809b6b41bc52e0bb9885053
+      spriteID: 208b755e07c05534b8c8225870d0526a
       vertices: []
       indices: 
       edges: []
@@ -1067,9 +1067,9 @@ TextureImporter:
       name: calvo_43
       rect:
         serializedVersion: 2
-        x: 289
+        x: 288
         y: 322
-        width: 16
+        width: 17
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1078,7 +1078,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c053ae079438a24c97d0930b28e38b0
+      spriteID: 4c9e4fe62c317814d9016a867614a637
       vertices: []
       indices: 
       edges: []
@@ -1090,7 +1090,7 @@ TextureImporter:
         x: 10
         y: 290
         width: 19
-        height: 24
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1098,7 +1098,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab1682da468258f41bb3ccfd2854b72a
+      spriteID: bf278ed7abd3fe845891da9064bcd2a1
       vertices: []
       indices: 
       edges: []
@@ -1118,7 +1118,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5f5471134b9dbb47bf7c3f8a2412a80
+      spriteID: a6759df1c61956843982048abf668db4
       vertices: []
       indices: 
       edges: []
@@ -1129,8 +1129,8 @@ TextureImporter:
         serializedVersion: 2
         x: 91
         y: 290
-        width: 15
-        height: 24
+        width: 14
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1138,7 +1138,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ebb2ff934675814db67290eceaa809c
+      spriteID: 7fdc8683dacb8d3439b3f4c19c1cffd1
       vertices: []
       indices: 
       edges: []
@@ -1148,9 +1148,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 129
-        y: 290
+        y: 288
         width: 16
-        height: 24
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1158,7 +1158,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93c8d4b336b52844b929318e98bcecc3
+      spriteID: 100170388b7c96644bc913fdb0824e49
       vertices: []
       indices: 
       edges: []
@@ -1167,10 +1167,10 @@ TextureImporter:
       name: calvo_48
       rect:
         serializedVersion: 2
-        x: 170
+        x: 168
         y: 290
-        width: 14
-        height: 24
+        width: 16
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1178,7 +1178,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 429f183a480720946a13895c85e4d6bf
+      spriteID: 5172c271cbde10f40ba9b3b71b05155b
       vertices: []
       indices: 
       edges: []
@@ -1187,10 +1187,10 @@ TextureImporter:
       name: calvo_49
       rect:
         serializedVersion: 2
-        x: 210
+        x: 200
         y: 290
-        width: 14
-        height: 24
+        width: 36
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1198,7 +1198,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 225a2cb2f303d27458d0524821009e5a
+      spriteID: 86325fdd62ec6b8418317b1ddb08bf24
       vertices: []
       indices: 
       edges: []
@@ -1207,10 +1207,10 @@ TextureImporter:
       name: calvo_50
       rect:
         serializedVersion: 2
-        x: 249
-        y: 290
-        width: 14
-        height: 24
+        x: 248
+        y: 288
+        width: 16
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1218,7 +1218,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84a9ed27020a13c4cbfdae852298b1a0
+      spriteID: 1f2536175fafe3c4d95a549484adb1ed
       vertices: []
       indices: 
       edges: []
@@ -1227,10 +1227,10 @@ TextureImporter:
       name: calvo_51
       rect:
         serializedVersion: 2
-        x: 286
+        x: 287
         y: 290
-        width: 16
-        height: 24
+        width: 225
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1238,7 +1238,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28b8000642b06454bb0d4e56b7033b66
+      spriteID: ae520befebe07b1419a885812f421b91
       vertices: []
       indices: 
       edges: []
@@ -1249,8 +1249,8 @@ TextureImporter:
         serializedVersion: 2
         x: 13
         y: 258
-        width: 13
-        height: 24
+        width: 12
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1258,7 +1258,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0943c0d3df889445b7500229b908d14
+      spriteID: 648ef62385d8d6a4e9913040ba149026
       vertices: []
       indices: 
       edges: []
@@ -1267,10 +1267,10 @@ TextureImporter:
       name: calvo_53
       rect:
         serializedVersion: 2
-        x: 51
+        x: 40
         y: 258
-        width: 16
-        height: 24
+        width: 27
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1278,7 +1278,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1a55008d272a4641815df60513cb345
+      spriteID: d7d19183d3a07484fbfe193ad4b3a1cf
       vertices: []
       indices: 
       edges: []
@@ -1287,10 +1287,10 @@ TextureImporter:
       name: calvo_54
       rect:
         serializedVersion: 2
-        x: 90
+        x: 88
         y: 258
-        width: 17
-        height: 24
+        width: 20
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1298,7 +1298,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69f1529a93e8fdc4da2a364dbf81e10d
+      spriteID: 81712eb58a8ffb143be582369d9750b3
       vertices: []
       indices: 
       edges: []
@@ -1318,7 +1318,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c275825a1ed8db41bc507a2fc46b408
+      spriteID: 3390169fbcf03fc4786b030454a6d2a3
       vertices: []
       indices: 
       edges: []
@@ -1327,10 +1327,10 @@ TextureImporter:
       name: calvo_56
       rect:
         serializedVersion: 2
-        x: 171
+        x: 160
         y: 258
-        width: 17
-        height: 24
+        width: 28
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1338,7 +1338,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ee5a3409a189e74e89713434a463507
+      spriteID: 4490debdbd894f741975ee422b45b7c8
       vertices: []
       indices: 
       edges: []
@@ -1358,7 +1358,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca00524d76f9da84a8915dc2d0c226c9
+      spriteID: 6870dc18340944446825943e01666389
       vertices: []
       indices: 
       edges: []
@@ -1378,7 +1378,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df53538764a0ed44499b0aaaaeea1bcd
+      spriteID: 0227f970d78970e47be6b8a1d75d1829
       vertices: []
       indices: 
       edges: []
@@ -1390,7 +1390,7 @@ TextureImporter:
         x: 286
         y: 258
         width: 16
-        height: 24
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1398,7 +1398,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bb015b512a196b43aa51517ffc94eb7
+      spriteID: 85bfba2a309ebd6438e85ef3eda392ea
       vertices: []
       indices: 
       edges: []
@@ -1410,46 +1410,6 @@ TextureImporter:
         x: 10
         y: 227
         width: 20
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f98b4d0de99d1b343985764ee059854d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: calvo_61
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 227
-        width: 20
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c7cb2388ef28e3439a934d50b9c7475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: calvo_62
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 226
-        width: 20
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1458,7 +1418,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f08972625fc6e8142bba663e11019cf9
+      spriteID: 807350dbef41d6747a836f1dd1431f6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: calvo_61
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 227
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8234834ec7bec4e448a4fba33928528c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: calvo_62
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 226
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9d5fdc769e4fb4ba0faffdcf85f72c
       vertices: []
       indices: 
       edges: []
@@ -1478,7 +1478,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f31330eb8b742f4f818af18535eeb27
+      spriteID: f52ad05ced3c1bf42bec7c9da923c876
       vertices: []
       indices: 
       edges: []
@@ -1490,7 +1490,7 @@ TextureImporter:
         x: 168
         y: 226
         width: 20
-        height: 25
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1498,7 +1498,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ee87950941466545bbd25bf2dec3caf
+      spriteID: f3453ab3d2abebf4cb216d68a3a7918b
       vertices: []
       indices: 
       edges: []
@@ -1510,7 +1510,7 @@ TextureImporter:
         x: 207
         y: 227
         width: 20
-        height: 24
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1518,7 +1518,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba23289814063ae4198e7c0a92f4e125
+      spriteID: bb28f1d429c45614a88528d6c4e9013b
       vertices: []
       indices: 
       edges: []
@@ -1527,10 +1527,10 @@ TextureImporter:
       name: calvo_66
       rect:
         serializedVersion: 2
-        x: 246
+        x: 247
         y: 226
-        width: 21
-        height: 25
+        width: 20
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1538,7 +1538,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3c524cd4b4a7bf4fbbde421e130ae5c
+      spriteID: e949f7d172b8c9942afd9c2b450067a8
       vertices: []
       indices: 
       edges: []
@@ -1547,9 +1547,9 @@ TextureImporter:
       name: calvo_67
       rect:
         serializedVersion: 2
-        x: 286
+        x: 287
         y: 226
-        width: 20
+        width: 19
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1558,7 +1558,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a45e4273ed2b964fb3efe479b913298
+      spriteID: 4ce1431efd724924a9072c45cfe8c929
       vertices: []
       indices: 
       edges: []
@@ -1567,10 +1567,10 @@ TextureImporter:
       name: calvo_68
       rect:
         serializedVersion: 2
-        x: 325
+        x: 324
         y: 226
         width: 21
-        height: 25
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1578,7 +1578,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b2ef3f6bdf775b4bae0dcb6d54805e8
+      spriteID: 4a9c3432c2aeeca45901729fedd208ba
       vertices: []
       indices: 
       edges: []
@@ -1598,7 +1598,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edef679a1a5c3044fa397593ca09f9ea
+      spriteID: e092a7429bdcaf14f9c3c9678116e740
       vertices: []
       indices: 
       edges: []
@@ -1610,7 +1610,7 @@ TextureImporter:
         x: 48
         y: 194
         width: 19
-        height: 24
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1618,7 +1618,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f8aee63650b45448b027770df70c22a
+      spriteID: e59ab21944d15314b9a744c8a92c91bf
       vertices: []
       indices: 
       edges: []
@@ -1629,8 +1629,8 @@ TextureImporter:
         serializedVersion: 2
         x: 86
         y: 195
-        width: 20
-        height: 24
+        width: 19
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1638,7 +1638,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 346445bf9d0e72b4fac0c22b44368256
+      spriteID: 3cc601bbc19f858479ebdc68ef00afa7
       vertices: []
       indices: 
       edges: []
@@ -1647,10 +1647,10 @@ TextureImporter:
       name: calvo_72
       rect:
         serializedVersion: 2
-        x: 125
+        x: 124
         y: 195
-        width: 21
-        height: 24
+        width: 22
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1658,7 +1658,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20d658a6a43a2f244aa6e344ffc11d8f
+      spriteID: 50ad2607c00e25043b6d0558c891b32d
       vertices: []
       indices: 
       edges: []
@@ -1678,7 +1678,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91a7d5663bd02c84d83b9f188b3501f7
+      spriteID: ea32ca7f133338c4fb051196e6246782
       vertices: []
       indices: 
       edges: []
@@ -1689,8 +1689,8 @@ TextureImporter:
         serializedVersion: 2
         x: 203
         y: 194
-        width: 24
-        height: 24
+        width: 25
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1698,7 +1698,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82a2381bd531fcc47ae8b51f3456e41d
+      spriteID: 008d52efbe0c945438498c62ea8b3c7b
       vertices: []
       indices: 
       edges: []
@@ -1718,7 +1718,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82b54f1a15cd41341b47925ca42886d1
+      spriteID: bbf78b527cd085e46a51cc47fe8bdbf3
       vertices: []
       indices: 
       edges: []
@@ -1727,10 +1727,10 @@ TextureImporter:
       name: calvo_76
       rect:
         serializedVersion: 2
-        x: 277
+        x: 272
         y: 194
-        width: 27
-        height: 25
+        width: 32
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1738,7 +1738,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c45de72b9a5999498421cd46d6adbe6
+      spriteID: ba75f6138510d7e48a3f12b5a1fddfc1
       vertices: []
       indices: 
       edges: []
@@ -1749,7 +1749,7 @@ TextureImporter:
         serializedVersion: 2
         x: 322
         y: 194
-        width: 20
+        width: 190
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1758,7 +1758,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a36d54bbe4caca84da68b71b478653fc
+      spriteID: 594b6acc8da3c8a4bbeb8b74a771755c
       vertices: []
       indices: 
       edges: []
@@ -1769,46 +1769,6 @@ TextureImporter:
         serializedVersion: 2
         x: 10
         y: 163
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ceb9270c1137f3646a239694005c6209
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: calvo_79
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 163
-        width: 23
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cdfa04d88ad91414c82ac50ba96e7afd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: calvo_80
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 162
         width: 23
         height: 25
       alignment: 0
@@ -1818,7 +1778,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e991afeee1d77a0498dbb50c663228c7
+      spriteID: efdb796155603d44cb6231a041fe9761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: calvo_79
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 163
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c9d6d888821ec408ec5f7d110d1fe8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: calvo_80
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 162
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7cf864ede119714c8f61a206b050290
       vertices: []
       indices: 
       edges: []
@@ -1830,7 +1830,7 @@ TextureImporter:
         x: 129
         y: 162
         width: 23
-        height: 24
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1838,7 +1838,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9eb2a7686eb56244b2600a68703525c
+      spriteID: 5ed9508d262c78c4e82e2db6fd7a9e6e
       vertices: []
       indices: 
       edges: []
@@ -1849,8 +1849,8 @@ TextureImporter:
         serializedVersion: 2
         x: 168
         y: 162
-        width: 23
-        height: 25
+        width: 29
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1858,7 +1858,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23762c4a83a11364db9356d5cfad402b
+      spriteID: 373b41c39fefd8144bf452abc460fea2
       vertices: []
       indices: 
       edges: []
@@ -1878,7 +1878,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2bb1bd6135266741b8c13a19e9e3fcb
+      spriteID: 74e0e279a719fb94e8951b3306fbc2f5
       vertices: []
       indices: 
       edges: []
@@ -1887,10 +1887,10 @@ TextureImporter:
       name: calvo_84
       rect:
         serializedVersion: 2
-        x: 246
+        x: 247
         y: 162
-        width: 24
-        height: 25
+        width: 23
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1898,7 +1898,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 902718a9ae6861a48ba04577d3ddd9da
+      spriteID: 6223a490cc6376149805a3549c33eb39
       vertices: []
       indices: 
       edges: []
@@ -1907,9 +1907,9 @@ TextureImporter:
       name: calvo_85
       rect:
         serializedVersion: 2
-        x: 286
+        x: 284
         y: 162
-        width: 23
+        width: 32
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1918,7 +1918,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60d5b7299cfd173469a4d41284009bc2
+      spriteID: faabf2cc3e3db7c4687de273636a83fc
       vertices: []
       indices: 
       edges: []
@@ -1930,7 +1930,7 @@ TextureImporter:
         x: 325
         y: 162
         width: 24
-        height: 25
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1938,7 +1938,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cceec0380f153a42b60bafed8fe6da6
+      spriteID: aa177d2cd918d884eaf6f45887e140e1
       vertices: []
       indices: 
       edges: []
@@ -1947,10 +1947,10 @@ TextureImporter:
       name: calvo_87
       rect:
         serializedVersion: 2
-        x: 13
+        x: 12
         y: 131
-        width: 25
-        height: 24
+        width: 26
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1958,7 +1958,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a6f554fdc0a92a4eb14cd5b8da01d25
+      spriteID: e7b08cb21ae801e4c8111dcb5efc2f89
       vertices: []
       indices: 
       edges: []
@@ -1967,9 +1967,9 @@ TextureImporter:
       name: calvo_88
       rect:
         serializedVersion: 2
-        x: 51
+        x: 41
         y: 131
-        width: 21
+        width: 31
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1978,7 +1978,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccd69b8dad693c7458b3d09c4dbc1d74
+      spriteID: 8bd597f0af5d7d94680fdab7c3206a66
       vertices: []
       indices: 
       edges: []
@@ -1990,7 +1990,7 @@ TextureImporter:
         x: 91
         y: 131
         width: 21
-        height: 24
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1998,7 +1998,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4db0092edc6f2d245835eec9b539f620
+      spriteID: e0a85abbb7982cc4f9510b2598ef17be
       vertices: []
       indices: 
       edges: []
@@ -2007,10 +2007,10 @@ TextureImporter:
       name: calvo_90
       rect:
         serializedVersion: 2
-        x: 130
+        x: 124
         y: 131
-        width: 22
-        height: 24
+        width: 28
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2018,7 +2018,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 898a5907513af974b927ddb14524907a
+      spriteID: 077179413ceca5a43b3aa2b52708bc2b
       vertices: []
       indices: 
       edges: []
@@ -2030,7 +2030,7 @@ TextureImporter:
         x: 168
         y: 131
         width: 27
-        height: 24
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2038,7 +2038,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11890e0da605f974d92d2820acde82eb
+      spriteID: 154b0201c3b6c52408e86c6fd5491a11
       vertices: []
       indices: 
       edges: []
@@ -2047,10 +2047,10 @@ TextureImporter:
       name: calvo_92
       rect:
         serializedVersion: 2
-        x: 206
+        x: 207
         y: 131
-        width: 18
-        height: 24
+        width: 66
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2058,7 +2058,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 124af3ad710d1ae4383d171afbf05353
+      spriteID: f6083bcb7dd54284bae30b7d0d8802dd
       vertices: []
       indices: 
       edges: []
@@ -2067,10 +2067,10 @@ TextureImporter:
       name: calvo_93
       rect:
         serializedVersion: 2
-        x: 247
+        x: 287
         y: 131
         width: 26
-        height: 24
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2078,7 +2078,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3acb4ee872041e04ca4cbe0dc5449dd2
+      spriteID: 457863f4ec881bd47b26be2feb37a92c
       vertices: []
       indices: 
       edges: []
@@ -2087,10 +2087,10 @@ TextureImporter:
       name: calvo_94
       rect:
         serializedVersion: 2
-        x: 287
+        x: 327
         y: 131
-        width: 26
-        height: 24
+        width: 22
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2098,7 +2098,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe0a7cc0203474d4883f86fb1cff93ff
+      spriteID: 135fd99efc4a3f74583790adc1457298
       vertices: []
       indices: 
       edges: []
@@ -2107,10 +2107,10 @@ TextureImporter:
       name: calvo_95
       rect:
         serializedVersion: 2
-        x: 327
-        y: 131
-        width: 22
-        height: 24
+        x: 10
+        y: 99
+        width: 19
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2118,7 +2118,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f7f56121491bd642a6a4d9f45e47ddb
+      spriteID: 9858d59b3c9bad64382b9a5e6c0c0301
       vertices: []
       indices: 
       edges: []
@@ -2127,10 +2127,10 @@ TextureImporter:
       name: calvo_96
       rect:
         serializedVersion: 2
-        x: 10
-        y: 99
-        width: 19
-        height: 24
+        x: 51
+        y: 98
+        width: 17
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2138,33 +2138,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b589f586f3c7644089ec08d4022f8dc
+      spriteID: fa09a835ccffcb6489b2c3227229f926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: calvo_97
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 98
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d89087efeaa1084a976f527b84232cd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: calvo_98
       rect:
         serializedVersion: 2
         x: 91
@@ -2178,18 +2158,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4512839c80f904746a45bb7e37f16e7e
+      spriteID: 0cfe9aee2a5033e458c6684f066618b8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: calvo_99
+      name: calvo_98
       rect:
         serializedVersion: 2
-        x: 130
+        x: 117
         y: 98
-        width: 17
+        width: 31
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2198,13 +2178,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6a1d5c4bbf4fc84b978675916bd7ff4
+      spriteID: d8747d08ef7555e4589602a95a17ae06
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: calvo_100
+      name: calvo_99
       rect:
         serializedVersion: 2
         x: 168
@@ -2218,18 +2198,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79a3f975f3092cd409e5ade818cb5718
+      spriteID: 22e40ae7e83e8b54eba8935faf4ec219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: calvo_101
+      name: calvo_100
       rect:
         serializedVersion: 2
         x: 208
         y: 98
-        width: 26
+        width: 25
         height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2238,18 +2218,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdccf029499877341b1f8bac72a42389
+      spriteID: dd097ceaa6720dc49a22218191bcf73f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: calvo_102
+      name: calvo_101
       rect:
         serializedVersion: 2
         x: 10
         y: 67
-        width: 17
+        width: 18
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2258,18 +2238,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68d2d30e6f8ce034ea177c2d31e9e31f
+      spriteID: 8131ee97acbe065408152bc1b10280e5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: calvo_103
+      name: calvo_102
       rect:
         serializedVersion: 2
         x: 46
         y: 67
-        width: 20
+        width: 19
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2278,13 +2258,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c703d18bac150d4d93690b3a2135e99
+      spriteID: 19c124ad22fc3c24e9df8de856a13bf8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: calvo_104
+      name: calvo_103
       rect:
         serializedVersion: 2
         x: 87
@@ -2298,7 +2278,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf22e566f54e2b34cbd88086ceecfdb8
+      spriteID: d4800a44153d7f040b5e8fdd71f2df61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: calvo_104
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 82
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d22cccb8505e804fa18eaa3a98afc3e
       vertices: []
       indices: 
       edges: []
@@ -2307,9 +2307,9 @@ TextureImporter:
       name: calvo_105
       rect:
         serializedVersion: 2
-        x: 122
+        x: 120
         y: 67
-        width: 24
+        width: 26
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2318,7 +2318,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b38695085d74d04bbe6ab2cad4b99b0
+      spriteID: 77895b82d3abe154bb068ebe55061e51
       vertices: []
       indices: 
       edges: []
@@ -2338,7 +2338,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15cec4b92ada31449a3256bf5eecc1ed
+      spriteID: 7c7d41c58fc70b943b0506993e7dc643
       vertices: []
       indices: 
       edges: []
@@ -2350,7 +2350,7 @@ TextureImporter:
         x: 200
         y: 67
         width: 24
-        height: 28
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2358,7 +2358,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8613c99eb2fb7584ba6b103e05c8e3a3
+      spriteID: 407bf0dd85d421c4f9c951f7baaca050
       vertices: []
       indices: 
       edges: []
@@ -2369,7 +2369,7 @@ TextureImporter:
         serializedVersion: 2
         x: 10
         y: 35
-        width: 20
+        width: 22
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2378,7 +2378,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bba915b7274fe74d978c79433956693
+      spriteID: 3e710066fb7ca7549b882a3620db0c59
       vertices: []
       indices: 
       edges: []
@@ -2387,9 +2387,9 @@ TextureImporter:
       name: calvo_109
       rect:
         serializedVersion: 2
-        x: 51
+        x: 40
         y: 35
-        width: 16
+        width: 28
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2398,7 +2398,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86c83d91151e655459c319428f6a440f
+      spriteID: a6833350aef05094d94c67184c84f313
       vertices: []
       indices: 
       edges: []
@@ -2409,7 +2409,7 @@ TextureImporter:
         serializedVersion: 2
         x: 90
         y: 35
-        width: 17
+        width: 18
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2418,7 +2418,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc1f50a7b421e764fa5d75f62440064b
+      spriteID: 229ba564c56e32f4fab389c115e63302
       vertices: []
       indices: 
       edges: []
@@ -2429,27 +2429,7 @@ TextureImporter:
         serializedVersion: 2
         x: 130
         y: 35
-        width: 17
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7760ed67c973df54da22325414f4dc5c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: calvo_112
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 35
-        width: 23
+        width: 18
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2458,7 +2438,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38971703de457f6468c09d7e85b8b0ce
+      spriteID: 4b2f62e95b4236f4e995bb6523a4cf16
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: calvo_112
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 35
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbc8b1cedb929b49ae6bb796d8aa158
       vertices: []
       indices: 
       edges: []
@@ -2478,7 +2478,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27aa22b904a3abb428ad9f8cf3c194cd
+      spriteID: a0b9672f4543cfb41a07409b3ce3b7ab
       vertices: []
       indices: 
       edges: []
@@ -2487,10 +2487,10 @@ TextureImporter:
       name: calvo_114
       rect:
         serializedVersion: 2
-        x: 13
-        y: 4
-        width: 17
-        height: 24
+        x: 12
+        y: 0
+        width: 18
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2498,7 +2498,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa7fc8ae886eb4b4fbadc12df38e292d
+      spriteID: 265a7beae376f9b48bcd96f7104b4c8b
       vertices: []
       indices: 
       edges: []
@@ -2507,10 +2507,10 @@ TextureImporter:
       name: calvo_115
       rect:
         serializedVersion: 2
-        x: 53
+        x: 52
         y: 4
-        width: 19
-        height: 23
+        width: 31
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2518,7 +2518,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d30a9f970f080204a9de3ad6a6c92374
+      spriteID: e0c343af60853b44cb9af726ef9fab13
       vertices: []
       indices: 
       edges: []
@@ -2538,7 +2538,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e4b3827dc00b5942a33aa824f48b901
+      spriteID: 34639702fbdc7ba4d948702e5704e90c
       vertices: []
       indices: 
       edges: []
@@ -2547,49 +2547,9 @@ TextureImporter:
       name: calvo_117
       rect:
         serializedVersion: 2
-        x: 130
-        y: 4
-        width: 25
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a45d6972563bbc844b4caab32f1265dc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: calvo_118
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 4
-        width: 26
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c74521c4e20f8304d8c18c6c1636ee77
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: calvo_119
-      rect:
-        serializedVersion: 2
-        x: 209
-        y: 4
-        width: 25
+        x: 128
+        y: 0
+        width: 27
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2598,7 +2558,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3536a52de98b47a4e932579e7cbddf1f
+      spriteID: 0012d60b2b6ee884da136556feea8343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: calvo_118
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c89ddf7fa5e1b4db2c5c81a4f44aed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: calvo_119
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 4
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7e60df2d51156418e43bc05c704a01
       vertices: []
       indices: 
       edges: []

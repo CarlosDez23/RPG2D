@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: alien_andando_abajo
+  m_Name: alien_ataque_arriba
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,21 +20,21 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300158, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
+      value: {fileID: 21300056, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
+    - time: 0.1
+      value: {fileID: 21300058, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
     - time: 0.18333334
-      value: {fileID: 21300160, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
-    - time: 0.35
-      value: {fileID: 21300162, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
+      value: {fileID: 21300060, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
+    - time: 0.28333333
+      value: {fileID: 21300062, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
+    - time: 0.38333333
+      value: {fileID: 21300064, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
+    - time: 0.48333332
+      value: {fileID: 21300066, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
     - time: 0.56666666
-      value: {fileID: 21300164, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
-    - time: 0.76666665
-      value: {fileID: 21300166, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
-    - time: 0.98333335
-      value: {fileID: 21300168, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
-    - time: 1.15
-      value: {fileID: 21300170, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
-    - time: 1.3333334
-      value: {fileID: 21300172, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
+      value: {fileID: 21300068, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
+    - time: 0.6666667
+      value: {fileID: 21300070, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -54,20 +54,20 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300158, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
-    - {fileID: 21300160, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
-    - {fileID: 21300162, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
-    - {fileID: 21300164, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
-    - {fileID: 21300166, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
-    - {fileID: 21300168, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
-    - {fileID: 21300170, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
-    - {fileID: 21300172, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
+    - {fileID: 21300056, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
+    - {fileID: 21300058, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
+    - {fileID: 21300060, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
+    - {fileID: 21300062, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
+    - {fileID: 21300064, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
+    - {fileID: 21300066, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
+    - {fileID: 21300068, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
+    - {fileID: 21300070, guid: 5a22089b5b072d44686efe7a82fefef9, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.35
+    m_StopTime: 0.68333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
