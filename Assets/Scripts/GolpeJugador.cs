@@ -28,5 +28,10 @@ public class GolpeJugador : MonoBehaviour
         {
             other.GetComponent<MovimientoAlien>().golpeado(); 
         }
+
+        if (other.tag.Equals("enemigoAzul"))
+        {
+            other.GetComponent<MovimientoAlienAzul>().golpeado(); 
+        }
     }
 }

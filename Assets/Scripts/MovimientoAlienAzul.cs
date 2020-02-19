@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MovimientoAlienAzul : MonoBehaviour
 {
-    
     public float velocidad = 4f; 
     public float radioVision;
     public float radioAtaque = 1.45f;
@@ -13,6 +12,8 @@ public class MovimientoAlienAzul : MonoBehaviour
     Animator animator;
     Rigidbody2D rigidbody2;
     GameObject personaje;
+
+    private int vidas = 3; 
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +35,7 @@ public class MovimientoAlienAzul : MonoBehaviour
         //por defecto nuestro target siempre sera nuestra posicion inicial
         Vector3 target = posicionInicial;
 
-//comprobamos un raycast del enemigo hasta el jugador
+        //comprobamos un raycast del enemigo hasta el jugador
         RaycastHit2D hit = Physics2D.Raycast(
             transform.position,
             personaje.transform.position - transform.position,
@@ -57,10 +58,14 @@ public class MovimientoAlienAzul : MonoBehaviour
         float distancia = Vector3.Distance(target, transform.position);
         Vector3 dir = (target - transform.position).normalized;
 
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        bool atacando = stateInfo.IsName("Alien_ataque");
+
         //si es el enemigo y esta en rago de ataque nos paramos y le atacamos
-        if(target != posicionInicial && distancia < radioAtaque){
+        if(target != posicionInicial && distancia < radioAtaque && !atacando){
             //aqui le atacariamos
             animator.SetTrigger("Atacando");
+
         }
         else{
             //de lo contrario nos movemos hacia el
@@ -80,12 +85,31 @@ public class MovimientoAlienAzul : MonoBehaviour
         }
 
         Debug.DrawLine(transform.position, target, Color.green);
+
+        
+
     }
 
     void OnDrawGizmosSelected() {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, radioVision);
         Gizmos.DrawWireSphere(transform.position, radioAtaque);
+    }
+
+    public void golpeado()
+    {
+        vidas--;
+        if (vidas == 0)
+        {
+            StartCoroutine(morir()); 
+        }
+    }
+
+    IEnumerator morir()
+    {
+        yield return new WaitForSeconds(.3f);
+        this.gameObject.SetActive(false);
+        Destroy(this, 0.5f); 
     }
 
 }

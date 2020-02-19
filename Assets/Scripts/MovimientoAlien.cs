@@ -58,10 +58,14 @@ public class MovimientoAlien : MonoBehaviour
         float distancia = Vector3.Distance(target, transform.position);
         Vector3 dir = (target - transform.position).normalized;
 
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        bool atacando = stateInfo.IsName("Alien_ataque");
+
         //si es el enemigo y esta en rago de ataque nos paramos y le atacamos
-        if(target != posicionInicial && distancia < radioAtaque){
+        if(target != posicionInicial && distancia < radioAtaque && !atacando){
             //aqui le atacariamos
             animator.SetTrigger("Atacando");
+
         }
         else{
             //de lo contrario nos movemos hacia el
@@ -81,6 +85,9 @@ public class MovimientoAlien : MonoBehaviour
         }
 
         Debug.DrawLine(transform.position, target, Color.green);
+
+        
+
     }
 
     void OnDrawGizmosSelected() {
