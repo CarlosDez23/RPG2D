@@ -23,5 +23,10 @@ public class GolpeJugador : MonoBehaviour
         {
             other.GetComponent<Jarron>().destruirJarron(); 
         }
+
+        if (other.tag.Equals("enemigo"))
+        {
+            other.GetComponent<MovimientoAlien>().golpeado(); 
+        }
     }
 }

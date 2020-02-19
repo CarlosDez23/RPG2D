@@ -13,6 +13,8 @@ public class MovimientoAlien : MonoBehaviour
     Rigidbody2D rigidbody2;
     GameObject personaje;
 
+    private int vidas = 3; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +35,7 @@ public class MovimientoAlien : MonoBehaviour
         //por defecto nuestro target siempre sera nuestra posicion inicial
         Vector3 target = posicionInicial;
 
-//comprobamos un raycast del enemigo hasta el jugador
+        //comprobamos un raycast del enemigo hasta el jugador
         RaycastHit2D hit = Physics2D.Raycast(
             transform.position,
             personaje.transform.position - transform.position,
@@ -85,6 +87,22 @@ public class MovimientoAlien : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, radioVision);
         Gizmos.DrawWireSphere(transform.position, radioAtaque);
+    }
+
+    public void golpeado()
+    {
+        vidas--;
+        if (vidas == 0)
+        {
+            StartCoroutine(morir()); 
+        }
+    }
+
+    IEnumerator morir()
+    {
+        yield return new WaitForSeconds(.3f);
+        this.gameObject.SetActive(false);
+        Destroy(this, 0.5f); 
     }
 
 }
