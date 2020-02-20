@@ -6,7 +6,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 public static class SistemaGuardado
 {
     //Método para guardar la partida 
-    public static void guardarPartida(MovimientoPersonaje personaje)
+    public static void guardarPartida(MovimientoPersonaje personaje, string escena)
     {
         FileStream stream = null; 
         try
@@ -15,7 +15,7 @@ public static class SistemaGuardado
             //Con persistent data path accedemos a la persistencia de cualquier sistema operativo
             string ruta = Application.persistentDataPath + "/estadojugador.data";
             stream = new FileStream(ruta, FileMode.Create);
-            DatosJugador datos = new DatosJugador(personaje);
+            DatosJugador datos = new DatosJugador(personaje, escena);
             formatter.Serialize(stream, datos);
            
 

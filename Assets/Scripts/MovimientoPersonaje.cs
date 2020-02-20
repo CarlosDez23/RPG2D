@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class MovimientoPersonaje : MonoBehaviour
 {   
 
@@ -68,6 +68,8 @@ public class MovimientoPersonaje : MonoBehaviour
             if (tiempoAnimacion > 0.33 && tiempoAnimacion < 0.66)
             {
                 colliderAtaque.enabled = true; 
+                StartCoroutine(guardar()); 
+                
             }else
             {
                 colliderAtaque.enabled = false; 
@@ -78,5 +80,19 @@ public class MovimientoPersonaje : MonoBehaviour
     void FixedUpdate()
     {
         rigidbody.MovePosition(rigidbody.position + movimiento * velocidad * Time.deltaTime);
+    }
+    
+    IEnumerator guardar()
+    {
+        yield return new WaitForSeconds(.3f);
+        SistemaGuardado.guardarPartida(this, SceneManager.GetActiveScene().name); 
+    }
+
+    public void cargarPersonaje(DatosJugador datos)
+    {
+        movimiento.x = datos.posicion[0];
+        movimiento.y = datos.posicion[1]; 
+        this.vidas = datos.vidas;
+        this.llaves = datos.llaves; 
     }
 }
