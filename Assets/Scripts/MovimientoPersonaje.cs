@@ -10,6 +10,9 @@ public class MovimientoPersonaje : MonoBehaviour
     Rigidbody2D rigidbody; 
     Vector2 movimiento;
     CircleCollider2D colliderAtaque; 
+
+    public int vidas; 
+    public int llaves; 
     
     //Prueba Inicio Mapa Nivel 2
     void Start()
@@ -19,6 +22,8 @@ public class MovimientoPersonaje : MonoBehaviour
         colliderAtaque = transform.GetChild(0).GetComponent<CircleCollider2D>(); 
         //Lo desactivamos desde el principio
         colliderAtaque.enabled = false; 
+        this.vidas  = 5; 
+        this.llaves = 0; 
     }
 
     void Update()
