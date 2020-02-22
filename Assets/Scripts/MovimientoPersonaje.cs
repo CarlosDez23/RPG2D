@@ -14,6 +14,9 @@ public class MovimientoPersonaje : MonoBehaviour
     public int vidas;
     public int llaves;
 
+    public FloatValue saludJugador; 
+    public Signal signalSalud; 
+
 
     //Prueba Inicio Mapa Nivel 2
     void Start()
@@ -103,9 +106,16 @@ public class MovimientoPersonaje : MonoBehaviour
     }
 
 
-    public void getHit()
+    public void getHit(float damage)
     {
         //Hay que cambiar la salud por float
+        saludJugador.valorInicial -= damage;
+        signalSalud.raise();
+        if (saludJugador.valorInicial == 0.0f)
+        {
+            StartCoroutine(morir()); 
+        }
+
     }
 
     public void cargarPersonaje(DatosJugador datos)
