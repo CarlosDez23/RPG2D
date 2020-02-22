@@ -114,4 +114,21 @@ public class MovimientoPersonaje : MonoBehaviour
         this.vidas = datos.vidas;
         this.llaves = datos.llaves;
     }
+
+    public void golpeado()
+    {
+        vidas--;
+        if (vidas == 0)
+        {
+            StartCoroutine(morir()); 
+        }
+        print(vidas);
+    }
+
+    IEnumerator morir()
+    {
+        yield return new WaitForSeconds(.3f);
+        this.gameObject.SetActive(false);
+        Destroy(this, 0.5f); 
+    }
 }

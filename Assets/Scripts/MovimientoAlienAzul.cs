@@ -12,6 +12,8 @@ public class MovimientoAlienAzul : MonoBehaviour
     Animator animator;
     Rigidbody2D rigidbody2;
     GameObject personaje;
+    CircleCollider2D ataqueCollider;
+    Vector2 mov;
 
     private int vidas = 3; 
 
@@ -27,6 +29,9 @@ public class MovimientoAlienAzul : MonoBehaviour
 
         animator = GetComponent<Animator>();
         rigidbody2 = GetComponent<Rigidbody2D>();
+        ataqueCollider = transform.GetChild(0).GetComponent<CircleCollider2D>();
+        //ataqueCollider.enabled = false;
+
     }
 
     // Update is called once per frame
@@ -61,11 +66,24 @@ public class MovimientoAlienAzul : MonoBehaviour
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
         bool atacando = stateInfo.IsName("Alien_ataque");
 
+        if(atacando){
+            float playbackTime = stateInfo.normalizedTime;
+            print("ataco");
+/*
+            if(playbackTime > 0.20 && playbackTime < 0.35){
+                ataqueCollider.enabled = true;
+            }else{
+                ataqueCollider.enabled = false;
+            }*/
+            
+        }
+
+        
+
         //si es el enemigo y esta en rago de ataque nos paramos y le atacamos
         if(target != posicionInicial && distancia < radioAtaque && !atacando){
             //aqui le atacariamos
             animator.SetTrigger("Atacando");
-
         }
         else{
             //de lo contrario nos movemos hacia el
@@ -75,6 +93,10 @@ public class MovimientoAlienAzul : MonoBehaviour
             animator.SetFloat("movX", dir.x);
             animator.SetFloat("movY", dir.y);
             animator.SetBool("Andando", true);
+            //mov =  new Vector2(dir.x,dir.y);
+            /*if(mov != Vector2.zero){
+                ataqueCollider.offset = new Vector2(dir.x/2,dir.y/2);
+            }*/
         }
 
         //una ultima comprobacion para evitar bugs forzando la posicion inicial
@@ -85,7 +107,6 @@ public class MovimientoAlienAzul : MonoBehaviour
         }
 
         Debug.DrawLine(transform.position, target, Color.green);
-
         
 
     }
