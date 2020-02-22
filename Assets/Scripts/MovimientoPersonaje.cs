@@ -109,9 +109,9 @@ public class MovimientoPersonaje : MonoBehaviour
     public void getHit(float damage)
     {
         //Hay que cambiar la salud por float
-        saludJugador.valorInicial -= damage;
+        saludJugador.valorEnEjecucion -= damage;
         signalSalud.raise();
-        if (saludJugador.valorInicial == 0.0f)
+        if (saludJugador.valorEnEjecucion <= 0.0f)
         {
             StartCoroutine(morir()); 
         }
@@ -135,7 +135,7 @@ public class MovimientoPersonaje : MonoBehaviour
         print(vidas);
     }
 
-    IEnumerator morir()
+    IEnumerator morir() 
     {
         yield return new WaitForSeconds(.3f);
         this.gameObject.SetActive(false);

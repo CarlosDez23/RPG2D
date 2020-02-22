@@ -11,6 +11,7 @@ public class CorazonesManager : MonoBehaviour
     public Sprite corazonMitad;
     public Sprite corazonVacio;
     public FloatValue contenedor;
+    public FloatValue vidasJugador; 
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,25 @@ public class CorazonesManager : MonoBehaviour
         {
             corazones[i].gameObject.SetActive(true);
             corazones[i].sprite = corazonLleno; 
+        }
+    }
+
+    public void actualizarEstadoCorazones()
+    {
+        float temporales = vidasJugador.valorEnEjecucion/2;
+        for (int i = 0; i < contenedor.valorInicial; i++)
+        {
+            if (i <= temporales-1)
+            {
+                corazones[i].sprite = corazonLleno;
+                
+            }else if(i >= temporales)
+            {
+                corazones[i].sprite = corazonVacio;
+            }else
+            {
+                corazones[i].sprite = corazonMitad;
+            }
         }
     }
 }
