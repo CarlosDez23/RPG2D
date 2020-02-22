@@ -102,6 +102,12 @@ public class MovimientoPersonaje : MonoBehaviour
         SistemaGuardado.guardarPartida(this, SceneManager.GetActiveScene().name);
     }
 
+
+    public void getHit()
+    {
+        //Hay que cambiar la salud por float
+    }
+
     public void cargarPersonaje(DatosJugador datos)
     {
         Debug.Log("Datos recibidos a cargar " + datos.posicion[0] + " " + datos.posicion[1]);
