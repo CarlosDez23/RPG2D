@@ -16,6 +16,8 @@ public class MovimientoPersonaje : MonoBehaviour
 
     public FloatValue saludJugador; 
     public Signal signalSalud; 
+    public Inventario inventario; 
+    public SpriteRenderer objetoRecibidoSprite;
 
 
     //Prueba Inicio Mapa Nivel 2
@@ -141,5 +143,11 @@ public class MovimientoPersonaje : MonoBehaviour
         yield return new WaitForSeconds(.3f);
         this.gameObject.SetActive(false);
         Destroy(this, 0.5f); 
+    }
+
+    public void cojerObjeto()
+    {
+        animator.SetBool("recibiendoobjeto",true);
+        objetoRecibidoSprite.sprite = inventario.objeto.spriteObjeto;
     }
 }
