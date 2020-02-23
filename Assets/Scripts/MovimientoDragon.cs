@@ -14,6 +14,8 @@ public class MovimientoDragon : MonoBehaviour
     GameObject personaje;
     CircleCollider2D ataqueCollider;
     Vector2 mov;
+    private float tiempoAtaque = 1f;
+    private float siguienteAtaque;
 
     private int vidas = 5; 
 
@@ -73,7 +75,11 @@ public class MovimientoDragon : MonoBehaviour
         //si es el enemigo y esta en rago de ataque nos paramos y le atacamos
         if(target != posicionInicial && distancia < radioAtaque && !atacando){
             //aqui le atacariamos
-            animator.SetTrigger("Atacando");
+            if(Time.time > siguienteAtaque){
+                animator.SetTrigger("Atacando");
+                siguienteAtaque = Time.time + tiempoAtaque;
+            }
+            
         }
         else{
             //de lo contrario nos movemos hacia el
