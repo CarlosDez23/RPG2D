@@ -115,6 +115,7 @@ public class MovimientoPersonaje : MonoBehaviour
         {
             StartCoroutine(morir()); 
         }
+        Debug.Log("Vidas del personaje "+saludJugador.valorEnEjecucion);
 
     }
 
