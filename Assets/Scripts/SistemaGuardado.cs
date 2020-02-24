@@ -8,7 +8,7 @@ public static class SistemaGuardado
     //Método para guardar la partida 
     public static void guardarPartida(MovimientoPersonaje personaje, string escena)
     {
-        FileStream stream = null; 
+        FileStream stream = null;
         try
         {
             BinaryFormatter formatter = new BinaryFormatter();
@@ -17,9 +17,10 @@ public static class SistemaGuardado
             stream = new FileStream(ruta, FileMode.Create);
             DatosJugador datos = new DatosJugador(personaje, escena);
             formatter.Serialize(stream, datos);
-           
 
-        }catch(IOException)
+
+        }
+        catch (IOException)
         {
             Debug.Log("Fallo al guardar la partida");
         }
@@ -32,7 +33,7 @@ public static class SistemaGuardado
     //Método para guardar la partida
     public static DatosJugador cargarPartida()
     {
-        DatosJugador datos = null; 
+        DatosJugador datos = null;
         string ruta = Application.persistentDataPath + "/estadojugador.data";
         if (File.Exists(ruta))
         {
@@ -40,10 +41,11 @@ public static class SistemaGuardado
             try
             {
                 BinaryFormatter formatter = new BinaryFormatter();
-                stream = new FileStream(ruta, FileMode.Open); 
-                datos =  formatter.Deserialize(stream) as DatosJugador;
-                 
-            }catch(IOException)
+                stream = new FileStream(ruta, FileMode.Open);
+                datos = formatter.Deserialize(stream) as DatosJugador;
+
+            }
+            catch (IOException)
             {
 
             }
@@ -51,7 +53,7 @@ public static class SistemaGuardado
             {
                 stream.Close();
             }
-            
+
         }
         return datos;
     }
@@ -61,7 +63,7 @@ public static class SistemaGuardado
         string ruta = Application.persistentDataPath + "/estadojugador.data";
         if (File.Exists(ruta))
         {
-            File.Delete(ruta); 
+            File.Delete(ruta);
         }
     }
 }
