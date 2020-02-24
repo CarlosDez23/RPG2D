@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class CorazonesManager : MonoBehaviour
 {
 
-    public Image[] corazones; 
+    public Image[] corazones;
     public Sprite corazonLleno;
     public Sprite corazonMitad;
     public Sprite corazonVacio;
     public FloatValue contenedor;
-    public FloatValue vidasJugador; 
+    public FloatValue vidasJugador;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,26 +20,29 @@ public class CorazonesManager : MonoBehaviour
 
     public void iniciarCorazones()
     {
-        for (int i = 0; i < contenedor.valorInicial; i++)
+        for (int i = 0; i < contenedor.valorEnEjecucion; i++)
         {
             corazones[i].gameObject.SetActive(true);
-            corazones[i].sprite = corazonLleno; 
+            corazones[i].sprite = corazonLleno;
         }
     }
 
     public void actualizarEstadoCorazones()
     {
-        float temporales = vidasJugador.valorEnEjecucion/2;
-        for (int i = 0; i < contenedor.valorInicial; i++)
+        iniciarCorazones();
+        float temporales = vidasJugador.valorEnEjecucion / 2;
+        for (int i = 0; i < contenedor.valorEnEjecucion; i++)
         {
-            if (i <= temporales-1)
+            if (i <= temporales - 1)
             {
                 corazones[i].sprite = corazonLleno;
-                
-            }else if(i >= temporales)
+
+            }
+            else if (i >= temporales)
             {
                 corazones[i].sprite = corazonVacio;
-            }else
+            }
+            else
             {
                 corazones[i].sprite = corazonMitad;
             }

@@ -9,7 +9,7 @@ public class Tesoro : MonoBehaviour
     public bool abierto;
     public Signal lanzarSignalObjeto;
     public bool enRango;
-    
+
     private Animator animator;
 
     // Start is called before the first frame update
@@ -21,34 +21,56 @@ public class Tesoro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag.Equals("Player") && !other.isTrigger)
+        if (Input.GetKeyDown(KeyCode.Space) && enRango)
         {
-            enRango = true; 
             if (!abierto)
             {
                 abrirCofre();
-                
-            }else
+            }
+            else
             {
                 cofreAbierto();
             }
         }
     }
 
-    public void abrirCofre()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        inventarioJugador.objeto = contenido;
-        lanzarSignalObjeto.raise();
-        abierto = true;  
+        if (other.tag.Equals("Player") && !other.isTrigger)
+        {
+            enRango = true;
+        }
     }
 
+    public void abrirCofre()
+    {
+        inventarioJugador.addObjeto(contenido);
+        inventarioJugador.objeto = contenido;
+        lanzarSignalObjeto.raise();
+        abierto = true;
+        animator.SetBool("abierto",true); 
+        StartCoroutine(borrarCofre());
+    }
+
+    
     public void cofreAbierto()
     {
+        lanzarSignalObjeto.raise();
+    }
+    
 
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag.Equals("Player") && !other.isTrigger && !abierto)
+        {
+            enRango = false;
+        }
+    }
+
+    IEnumerator borrarCofre()
+    {
+        yield return new WaitForSeconds(2f);
+        this.gameObject.SetActive(false);
+        Destroy(this, 0.5f); 
     }
 }

@@ -14,12 +14,8 @@ public class CargarJuego
         DatosJugador datos = SistemaGuardado.cargarPartida();
         if (datos != null)
         {
-            Debug.Log(datos.escena.ToString()+" "+datos.vidas+" "+datos.llaves+" "+datos.posicion[0]);
             string escena = datos.escena;
             SceneManager.LoadScene(escena);
-            player = GameObject.FindGameObjectWithTag("Player");
-            Debug.Log(player.tag);
-            player.GetComponent<MovimientoPersonaje>().cargarPersonaje(datos);
         }
     }
 }
