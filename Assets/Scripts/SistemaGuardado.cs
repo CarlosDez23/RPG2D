@@ -55,4 +55,13 @@ public static class SistemaGuardado
         }
         return datos;
     }
+
+    public static void borrarPartida()
+    {
+        string ruta = Application.persistentDataPath + "/estadojugador.data";
+        if (File.Exists(ruta))
+        {
+            File.Delete(ruta); 
+        }
+    }
 }
