@@ -46,11 +46,7 @@ public class MovimientoPersonaje : MonoBehaviour
     void Update()
     {
 
-        if (cargado)
-        {
-            getHit(0.0f); 
-            cargado = false;
-        }
+        getHit(0.0f);
         
         movimiento = new Vector2(
             Input.GetAxisRaw("Horizontal"),
