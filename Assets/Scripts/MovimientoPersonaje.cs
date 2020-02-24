@@ -19,7 +19,7 @@ public class MovimientoPersonaje : MonoBehaviour
     public Inventario inventario; 
     public SpriteRenderer objetoRecibidoSprite;
 
-    public bool cargado = true;
+    public bool cargado;
 
     //Prueba Inicio Mapa Nivel 2
     void Start()
@@ -35,6 +35,7 @@ public class MovimientoPersonaje : MonoBehaviour
         {
             this.llaves = datos.llaves;
             this.transform.position = new Vector2(datos.posicion[0], datos.posicion[1]);
+            cargado = true; 
            
         }
         else
@@ -46,7 +47,12 @@ public class MovimientoPersonaje : MonoBehaviour
     void Update()
     {
 
-        getHit(0.0f);
+        if (cargado)
+        {
+            getHit(0.0f);
+            cargado = false; 
+        }
+       
         
         movimiento = new Vector2(
             Input.GetAxisRaw("Horizontal"),
