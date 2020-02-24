@@ -19,7 +19,7 @@ public class PulsacionBoton : MonoBehaviour
     }
 
     public void comprobar(){
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(1);
     }
 
 
