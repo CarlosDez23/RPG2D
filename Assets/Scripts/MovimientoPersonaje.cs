@@ -19,7 +19,7 @@ public class MovimientoPersonaje : MonoBehaviour
     public Inventario inventario; 
     public SpriteRenderer objetoRecibidoSprite;
 
-    public bool cargado;
+    public bool cargado = false;
 
     //Prueba Inicio Mapa Nivel 2
     void Start()
@@ -47,10 +47,10 @@ public class MovimientoPersonaje : MonoBehaviour
     void Update()
     {
 
-        if (cargado)
+        if (!cargado)
         {
-            getHit(0.0f);
-            cargado = false; 
+            saludJugador.valorEnEjecucion = 10;
+            signalSalud.raise();
         }
        
         
