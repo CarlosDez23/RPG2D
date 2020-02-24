@@ -6,13 +6,11 @@ using UnityEngine;
 public class DatosJugador
 {
     public float[] posicion;
-    public float vidas;
     public int llaves; 
     public string escena; 
 
     public DatosJugador(MovimientoPersonaje personaje, string escena)
     {
-        this.vidas = personaje.saludJugador.valorEnEjecucion;
         this.llaves = personaje.llaves;
         this.posicion = new float[3];
         this.posicion[0] = personaje.transform.position.x;
