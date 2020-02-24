@@ -25,10 +25,12 @@ public class PulsacionBoton : MonoBehaviour
                 //herramientaBorrado.borrarDatos();
                 Instantiate(herramientaBorrado);
                 herramientaBorrado.GetComponent<GestionObjetosScriptables>().borrarDatos();
+                SistemaGuardado.borrarPartida();
                 SceneManager.LoadScene(1);
                 break;
             case 2: //cargar partida y reintentar
-
+                herramientaBorrado.GetComponent<GestionObjetosScriptables>().cargarCorazones();
+                CargarJuego.cargar();
                 break;
             case 3://salir -> inicio
                 SceneManager.LoadScene(0);
