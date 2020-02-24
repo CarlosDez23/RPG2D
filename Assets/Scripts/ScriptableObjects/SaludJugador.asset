@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: SaludJugador
   m_EditorClassIdentifier: 
   valorInicial: 10
-  valorEnEjecucion: 10
+  valorEnEjecucion: 4
