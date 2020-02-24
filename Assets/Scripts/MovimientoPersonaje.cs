@@ -52,9 +52,11 @@ public class MovimientoPersonaje : MonoBehaviour
         {
             saludJugador.valorEnEjecucion = 10;
             signalSalud.raise();
+        }else
+        {
+            getHit(0.0f); 
         }
-       
-        
+    
         movimiento = new Vector2(
             Input.GetAxisRaw("Horizontal"),
             Input.GetAxisRaw("Vertical")
