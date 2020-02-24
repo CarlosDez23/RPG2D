@@ -54,7 +54,7 @@ public class MovimientoPersonaje : MonoBehaviour
             signalSalud.raise();
         }else
         {
-            getHit(0.0f); 
+            signalSalud.raise(); 
         }
     
         movimiento = new Vector2(
