@@ -41,4 +41,15 @@ public class GestionObjetosScriptables : MonoBehaviour
             file.Close();
         }
     }
+    public void borrarDatos()
+    {
+
+        if (File.Exists(Application.persistentDataPath +
+            string.Format("/{0}.dat", corazones)))
+        {
+            File.Delete(Application.persistentDataPath +
+                string.Format("/{0}.dat", corazones));
+        }
+
+    }
 }

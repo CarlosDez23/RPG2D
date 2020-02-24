@@ -93,7 +93,7 @@ public class MovimientoPersonaje : MonoBehaviour
             if (tiempoAnimacion > 0.33 && tiempoAnimacion < 0.66)
             {
                 colliderAtaque.enabled = true;
-                StartCoroutine(guardar());
+                //StartCoroutine(guardar());
 
             }
             else
@@ -131,6 +131,7 @@ public class MovimientoPersonaje : MonoBehaviour
         yield return new WaitForSeconds(.3f);
         this.gameObject.SetActive(false);
         Destroy(this, 0.5f); 
+        SceneManager.LoadScene(4);
     }
 
     public void cojerObjeto()
@@ -140,6 +141,7 @@ public class MovimientoPersonaje : MonoBehaviour
         if (inventario.objeto.llave)
         {
             this.llaves++;
+            StartCoroutine(guardar());
         }
         StartCoroutine(pararRecibirObjeto());
     }
