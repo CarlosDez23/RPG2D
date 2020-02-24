@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovimientoDragon : MonoBehaviour
 {
@@ -127,6 +128,7 @@ public class MovimientoDragon : MonoBehaviour
         yield return new WaitForSeconds(.3f);
         this.gameObject.SetActive(false);
         Destroy(this, 0.5f); 
+        SceneManager.LoadScene(3);
     }
 
 }
