@@ -11,19 +11,21 @@ public class MovimientoPersonaje : MonoBehaviour
     Vector2 movimiento;
     CircleCollider2D colliderAtaque;
 
-    public GameObject  uividas;
+    public GameObject uividas;
     public int llaves;
 
-    public FloatValue saludJugador; 
-    public Signal signalSalud; 
-    public Inventario inventario; 
+    public FloatValue saludJugador;
+    public Signal signalSalud;
+    public Inventario inventario;
     public SpriteRenderer objetoRecibidoSprite;
-
     public bool cargado;
+
+    private bool primeraCarga;
 
     //Prueba Inicio Mapa Nivel 2
     void Start()
     {
+        primeraCarga = true;
         animator = GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody2D>();
         colliderAtaque = transform.GetChild(0).GetComponent<CircleCollider2D>();
@@ -35,8 +37,8 @@ public class MovimientoPersonaje : MonoBehaviour
         {
             this.llaves = datos.llaves;
             this.transform.position = new Vector2(datos.posicion[0], datos.posicion[1]);
-            cargado = true; 
-           
+            cargado = true;
+
         }
         else
         {
@@ -47,16 +49,20 @@ public class MovimientoPersonaje : MonoBehaviour
 
     void Update()
     {
-
-        if (!cargado)
+        if (primeraCarga)
         {
-            saludJugador.valorEnEjecucion = 10;
-            signalSalud.raise();
-        }else
-        {
-            signalSalud.raise(); 
+            if (!cargado)
+            {
+                saludJugador.valorEnEjecucion = 10;
+                //signalSalud.raise();
+            }else{
+                
+                getHit(0.0f);
+            }
+            primeraCarga = false;
         }
-    
+
+
         movimiento = new Vector2(
             Input.GetAxisRaw("Horizontal"),
             Input.GetAxisRaw("Vertical")
@@ -126,22 +132,22 @@ public class MovimientoPersonaje : MonoBehaviour
         signalSalud.raise();
         if (saludJugador.valorEnEjecucion <= 0.0f)
         {
-            StartCoroutine(morir()); 
+            StartCoroutine(morir());
         }
-        Debug.Log("Vidas del personaje "+saludJugador.valorEnEjecucion);
+        Debug.Log("Vidas del personaje " + saludJugador.valorEnEjecucion);
     }
 
-    IEnumerator morir() 
+    IEnumerator morir()
     {
         yield return new WaitForSeconds(.3f);
         this.gameObject.SetActive(false);
-        Destroy(this, 0.5f); 
+        Destroy(this, 0.5f);
         SceneManager.LoadScene(4);
     }
 
     public void cojerObjeto()
     {
-        animator.SetBool("recibiendoobjeto",true);
+        animator.SetBool("recibiendoobjeto", true);
         objetoRecibidoSprite.sprite = inventario.objeto.spriteObjeto;
         if (inventario.objeto.llave)
         {
@@ -154,7 +160,7 @@ public class MovimientoPersonaje : MonoBehaviour
     IEnumerator pararRecibirObjeto()
     {
         yield return new WaitForSeconds(2f);
-        animator.SetBool("recibiendoobjeto",false);
+        animator.SetBool("recibiendoobjeto", false);
         objetoRecibidoSprite.sprite = null;
     }
 }

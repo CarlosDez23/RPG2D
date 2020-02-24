@@ -23,18 +23,21 @@ public class PulsacionBoton : MonoBehaviour
         switch(opcion){
             case 1://nueva partida, ir a nivel uno
                 //herramientaBorrado.borrarDatos();
-                Instantiate(herramientaBorrado);
-                herramientaBorrado.GetComponent<GestionObjetosScriptables>().borrarDatos();
+                //Instantiate(herramientaBorrado);
+                //herramientaBorrado.GetComponent<GestionObjetosScriptables>().borrarDatos();
                 SistemaGuardado.borrarPartida();
+                //herramientaBorrado.GetComponent<GestionObjetosScriptables>().guardarCorazones();
                 SceneManager.LoadScene(1);
                 break;
             case 2: //cargar partida y reintentar
-                herramientaBorrado.GetComponent<GestionObjetosScriptables>().cargarCorazones();
+                Instantiate(herramientaBorrado);
+                herramientaBorrado.GetComponent<GestionObjetosScriptables>().borrarDatos();
                 CargarJuego.cargar();
                 break;
             case 3://salir -> inicio
                 SceneManager.LoadScene(0);
                 break;
+                
 
         }
     }

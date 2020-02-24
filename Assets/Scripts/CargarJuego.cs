@@ -15,4 +15,5 @@ public static class CargarJuego
             SceneManager.LoadScene(escena);
         }
     }
+
 }
