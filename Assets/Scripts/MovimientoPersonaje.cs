@@ -19,7 +19,7 @@ public class MovimientoPersonaje : MonoBehaviour
     public Inventario inventario; 
     public SpriteRenderer objetoRecibidoSprite;
 
-    public bool cargado = false;
+    public bool cargado;
 
     //Prueba Inicio Mapa Nivel 2
     void Start()
@@ -41,6 +41,7 @@ public class MovimientoPersonaje : MonoBehaviour
         else
         {
             this.llaves = 0;
+            cargado = false;
         }
     }
 
