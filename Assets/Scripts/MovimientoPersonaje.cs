@@ -72,7 +72,7 @@ public class MovimientoPersonaje : MonoBehaviour
         //No dejamos atacar hasta que no termine la animación 
         if (Input.GetKeyDown(KeyCode.Space) && !atacando)
         {
-            animator.SetTrigger("atacando");
+            atacar();
         }
 
         //Actualizamos la posición del collider de ataque en función de donde está mirando el personaje 
@@ -102,6 +102,11 @@ public class MovimientoPersonaje : MonoBehaviour
     void FixedUpdate()
     {
         rigidbody.MovePosition(rigidbody.position + movimiento * velocidad * Time.deltaTime);
+    }
+
+    public void atacar()
+    {
+        animator.SetTrigger("atacando");
     }
 
     //Guardamos la partida cuando abrimos un cofre
