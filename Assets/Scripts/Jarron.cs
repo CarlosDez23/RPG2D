@@ -5,6 +5,7 @@ using UnityEngine;
 public class Jarron : MonoBehaviour
 {   
     private Animator animator;
+    public AudioSource sonido;
 
     public bool tieneCorazon;
     public GameObject corazon;
@@ -28,6 +29,7 @@ public class Jarron : MonoBehaviour
 
     IEnumerator romper()
     {
+        Instantiate(sonido);
         yield return new WaitForSeconds(.3f);
         this.gameObject.SetActive(false);
         if (tieneCorazon)
