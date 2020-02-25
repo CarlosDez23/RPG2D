@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7795448965290772088}
   - component: {fileID: 3096475710981786645}
   m_Layer: 0
-  m_Name: Jarron 1
+  m_Name: Jarron
   m_TagString: rompible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,5 +139,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb92405b0cf10304eb778276748a3474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonido: {fileID: 1584063104602602462, guid: 78d34e0bf6c89d7429e5d59bfcb6821e, type: 3}
   tieneCorazon: 0
   corazon: {fileID: 0}

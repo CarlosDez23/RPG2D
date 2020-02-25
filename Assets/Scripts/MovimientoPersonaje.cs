@@ -107,6 +107,7 @@ public class MovimientoPersonaje : MonoBehaviour
     public void atacar()
     {
         animator.SetTrigger("atacando");
+        Instantiate(sonido); 
     }
 
     //Guardamos la partida cuando abrimos un cofre

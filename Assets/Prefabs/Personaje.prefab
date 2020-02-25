@@ -266,14 +266,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 4
-  uividas: {fileID: 0}
+  sonido: {fileID: 8927833181351247501, guid: cb1fe84b6322f764a8b6ba76b0818ae9, type: 3}
   llaves: 0
   vidas: 0
-  saludJugador: {fileID: 11400000, guid: f00d399900d9e6543a6fe90253bb208c, type: 2}
-  signalSalud: {fileID: 11400000, guid: bdeccfcee69fac84e81ac5afdee45193, type: 2}
   inventario: {fileID: 11400000, guid: 8d742f29441d5b24998bf989e3e812e1, type: 2}
   objetoRecibidoSprite: {fileID: 580724725}
   cargado: 0
+  herramientaCofres: {fileID: 0}
 --- !u!114 &4637084811372577041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,8 +286,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personaje: {fileID: 0}
-  salud: 0
-  numeroCorazones: 0
   corazones: []
   corazonLleno: {fileID: 0}
   corazonVacio: {fileID: 0}
