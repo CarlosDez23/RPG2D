@@ -9,6 +9,7 @@ public class Tesoro : MonoBehaviour
     public bool abierto;
     public Signal lanzarSignalObjeto;
     public bool enRango;
+ 
 
     private Animator animator;
 
@@ -44,6 +45,7 @@ public class Tesoro : MonoBehaviour
 
     public void abrirCofre()
     {
+        
         inventarioJugador.addObjeto(contenido);
         inventarioJugador.objeto = contenido;
         lanzarSignalObjeto.raise();

@@ -48,22 +48,6 @@ public class MovimientoPersonaje : MonoBehaviour
 
     void Update()
     {
-        if (primeraCarga)
-        {
-            if (!cargado)
-            {
-                //saludJugador.valorEnEjecucion = 10;
-                //signalSalud.raise();
-            }
-            else
-            {
-
-                //getHit(0.0f);
-            }
-            primeraCarga = false;
-        }
-
-
         movimiento = new Vector2(
             Input.GetAxisRaw("Horizontal"),
             Input.GetAxisRaw("Vertical")

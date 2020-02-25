@@ -17,8 +17,6 @@ public static class SistemaGuardado
             stream = new FileStream(ruta, FileMode.Create);
             DatosJugador datos = new DatosJugador(personaje, escena);
             formatter.Serialize(stream, datos);
-
-
         }
         catch (IOException)
         {

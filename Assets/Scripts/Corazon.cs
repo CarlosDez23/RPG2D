@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class Corazon : MonoBehaviour
 {
-    public Signal signalCorazon; 
-    public FloatValue saludJugador;
-    public float valorCorazon;
-    public FloatValue contenedorCorazones;
     
     void Start()
     {
@@ -24,15 +20,11 @@ public class Corazon : MonoBehaviour
     {
         if (other.tag.Equals("Player"))
         {
-            other.GetComponent<MovimientoPersonaje>().vidas++;
-            /*
-            saludJugador.valorEnEjecucion += valorCorazon;
-            if (saludJugador.valorInicial > contenedorCorazones.valorEnEjecucion * 2)
+            if (!(other.GetComponent<MovimientoPersonaje>().vidas == 5))
             {
-                saludJugador.valorInicial = contenedorCorazones.valorEnEjecucion * 2;
-            } 
-            signalCorazon.raise(); 
-            */
+                other.GetComponent<MovimientoPersonaje>().vidas++;
+            }
+            
             StartCoroutine(destruirCorazon());
         }
     }

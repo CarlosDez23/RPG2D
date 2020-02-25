@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PulsacionBoton : MonoBehaviour
 {
-    public GameObject herramientaBorrado;
-    // Start is called before the first frame update
+    
     void Start()
     {
         
@@ -20,27 +19,23 @@ public class PulsacionBoton : MonoBehaviour
 
     public void comprobar(int opcion){
 
-        switch(opcion){
-            case 1://nueva partida, ir a nivel uno
-                //herramientaBorrado.borrarDatos();
-                //Instantiate(herramientaBorrado);
-                //herramientaBorrado.GetComponent<GestionObjetosScriptables>().borrarDatos();
+        switch(opcion)
+        {
+            case 1:
+                //Nueva partida
                 SistemaGuardado.borrarPartida();
-                //herramientaBorrado.GetComponent<GestionObjetosScriptables>().guardarCorazones();
                 SceneManager.LoadScene(1);
                 break;
-            case 2: //cargar partida y reintentar
-                Instantiate(herramientaBorrado);
-                herramientaBorrado.GetComponent<GestionObjetosScriptables>().borrarDatos();
+            case 2: 
+                //Para las opciones de cargar y reintentar
                 CargarJuego.cargar();
                 break;
-            case 3://salir -> inicio
+            case 3:
+                //La opción de salir nos lleva al menú principal
                 SceneManager.LoadScene(0);
                 break;
-                
-
+            default:
+                break;
         }
     }
-
-
 }
