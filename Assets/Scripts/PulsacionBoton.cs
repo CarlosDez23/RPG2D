@@ -24,6 +24,7 @@ public class PulsacionBoton : MonoBehaviour
             case 1:
                 //Nueva partida
                 SistemaGuardado.borrarPartida();
+                SistemaGuardadoCofres.borrarPartida();
                 SceneManager.LoadScene(1);
                 break;
             case 2: 

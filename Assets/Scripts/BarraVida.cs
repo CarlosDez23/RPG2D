@@ -16,7 +16,7 @@ public class BarraVida : MonoBehaviour
     {
         numeroCorazones = 5; 
     }
-    
+
     void Update()
     {
         salud = personaje.GetComponent<MovimientoPersonaje>().vidas;
@@ -34,15 +34,6 @@ public class BarraVida : MonoBehaviour
             {
                 corazones[i].sprite = corazonVacio; 
             }
-            /*
-            if (i < numeroCorazones)
-            {
-                corazones[i].enabled = true;
-            }else
-            {
-                corazones[i].enabled = false; 
-            }
-            */
         }
     }
 }

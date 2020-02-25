@@ -31,7 +31,7 @@ public class Corazon : MonoBehaviour
 
     IEnumerator destruirCorazon()
     {
-        yield return new WaitForSeconds(.3f);
+        yield return new WaitForSeconds(.1f);
         Destroy(this.gameObject);
     }
 }

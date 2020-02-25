@@ -16,6 +16,7 @@ public class MovimientoPersonaje : MonoBehaviour
     public Inventario inventario;
     public SpriteRenderer objetoRecibidoSprite;
     public bool cargado;
+    public GameObject herramientaCofres; 
 
     private bool primeraCarga;
 
@@ -136,8 +137,9 @@ public class MovimientoPersonaje : MonoBehaviour
         {
             this.llaves++;
             StartCoroutine(guardar());
+           
         }
-        StartCoroutine(pararRecibirObjeto());
+        StartCoroutine(pararRecibirObjeto()); 
     }
 
     IEnumerator pararRecibirObjeto()
@@ -145,5 +147,13 @@ public class MovimientoPersonaje : MonoBehaviour
         yield return new WaitForSeconds(2f);
         animator.SetBool("recibiendoobjeto", false);
         objetoRecibidoSprite.sprite = null;
+        StartCoroutine(actualizarCofres());
+    }
+
+    IEnumerator actualizarCofres()
+    {
+        yield return new WaitForSeconds(.3f);
+        herramientaCofres.GetComponent<GestionCofresAbiertos>().guardar();
+        herramientaCofres.GetComponent<GestionCofresAbiertos>().actualizarEstado();
     }
 }
