@@ -21,7 +21,7 @@ public class GolpeAlien : MonoBehaviour
         if (other.tag.Equals("Player"))
         {
             //print("jugador golpeado");
-            other.GetComponent<MovimientoPersonaje>().getHit(1.0f); 
+            other.GetComponent<MovimientoPersonaje>().getHit(1); 
         }
     }
 }

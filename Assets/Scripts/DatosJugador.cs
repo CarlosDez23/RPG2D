@@ -7,11 +7,13 @@ public class DatosJugador
 {
     public float[] posicion;
     public int llaves; 
+    public int vidas;
     public string escena; 
 
     public DatosJugador(MovimientoPersonaje personaje, string escena)
     {
         this.llaves = personaje.llaves;
+        this.vidas = personaje.vidas;
         this.posicion = new float[3];
         this.posicion[0] = personaje.transform.position.x;
         this.posicion[1] = personaje.transform.position.y;

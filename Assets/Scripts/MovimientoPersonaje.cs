@@ -11,11 +11,8 @@ public class MovimientoPersonaje : MonoBehaviour
     Vector2 movimiento;
     CircleCollider2D colliderAtaque;
 
-    public GameObject uividas;
     public int llaves;
-
-    public FloatValue saludJugador;
-    public Signal signalSalud;
+    public int vidas;
     public Inventario inventario;
     public SpriteRenderer objetoRecibidoSprite;
     public bool cargado;
@@ -36,6 +33,7 @@ public class MovimientoPersonaje : MonoBehaviour
         if (datos != null)
         {
             this.llaves = datos.llaves;
+            this.vidas = datos.vidas;
             this.transform.position = new Vector2(datos.posicion[0], datos.posicion[1]);
             cargado = true;
 
@@ -43,6 +41,7 @@ public class MovimientoPersonaje : MonoBehaviour
         else
         {
             this.llaves = 0;
+            this.vidas = 5;
             cargado = false;
         }
     }
@@ -53,11 +52,13 @@ public class MovimientoPersonaje : MonoBehaviour
         {
             if (!cargado)
             {
-                saludJugador.valorEnEjecucion = 10;
+                //saludJugador.valorEnEjecucion = 10;
                 //signalSalud.raise();
-            }else{
-                
-                getHit(0.0f);
+            }
+            else
+            {
+
+                //getHit(0.0f);
             }
             primeraCarga = false;
         }
@@ -104,8 +105,6 @@ public class MovimientoPersonaje : MonoBehaviour
             if (tiempoAnimacion > 0.33 && tiempoAnimacion < 0.66)
             {
                 colliderAtaque.enabled = true;
-                //StartCoroutine(guardar());
-
             }
             else
             {
@@ -114,27 +113,27 @@ public class MovimientoPersonaje : MonoBehaviour
         }
     }
 
+    //Gestionamos las físicas del personaje en el fixed Update
     void FixedUpdate()
     {
         rigidbody.MovePosition(rigidbody.position + movimiento * velocidad * Time.deltaTime);
     }
 
+    //Guardamos la partida cuando abrimos un cofre
     IEnumerator guardar()
     {
         yield return new WaitForSeconds(.3f);
         SistemaGuardado.guardarPartida(this, SceneManager.GetActiveScene().name);
     }
 
-
-    public void getHit(float damage)
+    public void getHit(int damage)
     {
-        saludJugador.valorEnEjecucion -= damage;
-        signalSalud.raise();
-        if (saludJugador.valorEnEjecucion <= 0.0f)
+        vidas -= damage;
+        if (vidas <= 0)
         {
             StartCoroutine(morir());
         }
-        Debug.Log("Vidas del personaje " + saludJugador.valorEnEjecucion);
+        Debug.Log("Vidas del personaje " + vidas);
     }
 
     IEnumerator morir()
@@ -163,7 +162,4 @@ public class MovimientoPersonaje : MonoBehaviour
         animator.SetBool("recibiendoobjeto", false);
         objetoRecibidoSprite.sprite = null;
     }
-
-
-    
 }

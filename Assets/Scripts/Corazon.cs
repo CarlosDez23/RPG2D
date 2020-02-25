@@ -24,12 +24,15 @@ public class Corazon : MonoBehaviour
     {
         if (other.tag.Equals("Player"))
         {
+            other.GetComponent<MovimientoPersonaje>().vidas++;
+            /*
             saludJugador.valorEnEjecucion += valorCorazon;
             if (saludJugador.valorInicial > contenedorCorazones.valorEnEjecucion * 2)
             {
                 saludJugador.valorInicial = contenedorCorazones.valorEnEjecucion * 2;
             } 
             signalCorazon.raise(); 
+            */
             StartCoroutine(destruirCorazon());
         }
     }
