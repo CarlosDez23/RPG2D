@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Controles : MonoBehaviour
 {
+    MovimientoPersonaje personaje;
     // Start is called before the first frame update
     void Start()
     {
-        
+        personaje = GameObject.FindObjectOfType<MovimientoPersonaje>();
     }
 
     // Update is called once per frame
