@@ -14,8 +14,10 @@ public class MovimientoAlien : MonoBehaviour
     GameObject personaje;
     CircleCollider2D ataqueCollider;
     Vector2 mov;
-
+    public AudioSource sonido;
     private int vidas = 3; 
+    bool controlSonido = false;
+    Vector3 target;
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +40,7 @@ public class MovimientoAlien : MonoBehaviour
     void Update()
     {
         //por defecto nuestro target siempre sera nuestra posicion inicial
-        Vector3 target = posicionInicial;
+        target = posicionInicial;
 
         //comprobamos un raycast del enemigo hasta el jugador
         RaycastHit2D hit = Physics2D.Raycast(
@@ -69,13 +71,6 @@ public class MovimientoAlien : MonoBehaviour
         if(atacando){
             float playbackTime = stateInfo.normalizedTime;
             print("ataco");
-/*
-            if(playbackTime > 0.20 && playbackTime < 0.35){
-                ataqueCollider.enabled = true;
-            }else{
-                ataqueCollider.enabled = false;
-            }*/
-            
         }
 
         
@@ -84,6 +79,7 @@ public class MovimientoAlien : MonoBehaviour
         if(target != posicionInicial && distancia < radioAtaque && !atacando){
             //aqui le atacariamos
             animator.SetTrigger("Atacando");
+            
         }
         else{
             //de lo contrario nos movemos hacia el
@@ -93,10 +89,6 @@ public class MovimientoAlien : MonoBehaviour
             animator.SetFloat("movX", dir.x);
             animator.SetFloat("movY", dir.y);
             animator.SetBool("Andando", true);
-            //mov =  new Vector2(dir.x,dir.y);
-            /*if(mov != Vector2.zero){
-                ataqueCollider.offset = new Vector2(dir.x/2,dir.y/2);
-            }*/
         }
 
         //una ultima comprobacion para evitar bugs forzando la posicion inicial
@@ -107,6 +99,23 @@ public class MovimientoAlien : MonoBehaviour
         }
 
         Debug.DrawLine(transform.position, target, Color.green);
+
+        if(animator.GetBool("Andando")){
+            if(controlSonido){
+                //AudioSource.PlayClipAtPoint(sonido,target);
+                //Instantiate(sonido);
+                sonido.Play();
+                controlSonido = false;
+            }
+            
+        }else{
+            if(!controlSonido){
+                sonido.Stop();
+                controlSonido = true;
+            }
+                       
+        }
+        
         
 
     }
@@ -131,6 +140,7 @@ public class MovimientoAlien : MonoBehaviour
         yield return new WaitForSeconds(.3f);
         this.gameObject.SetActive(false);
         Destroy(this, 0.5f); 
+        Destroy(sonido);
     }
 
 }
