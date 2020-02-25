@@ -163,4 +163,7 @@ public class MovimientoPersonaje : MonoBehaviour
         animator.SetBool("recibiendoobjeto", false);
         objetoRecibidoSprite.sprite = null;
     }
+
+
+    
 }
