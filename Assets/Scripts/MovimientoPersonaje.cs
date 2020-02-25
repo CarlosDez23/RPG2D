@@ -10,7 +10,7 @@ public class MovimientoPersonaje : MonoBehaviour
     Rigidbody2D rigidbody;
     Vector2 movimiento;
     CircleCollider2D colliderAtaque;
-
+    public AudioSource sonido;
     public int llaves;
     public int vidas;
     public Inventario inventario;
@@ -72,7 +72,12 @@ public class MovimientoPersonaje : MonoBehaviour
         //No dejamos atacar hasta que no termine la animación 
         if (Input.GetKeyDown(KeyCode.Space) && !atacando)
         {
+<<<<<<< Updated upstream
             atacar();
+=======
+            animator.SetTrigger("atacando");
+            Instantiate(sonido);
+>>>>>>> Stashed changes
         }
 
         //Actualizamos la posición del collider de ataque en función de donde está mirando el personaje 

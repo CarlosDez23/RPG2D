@@ -18,6 +18,8 @@ public class MovimientoAlien : MonoBehaviour
     private int vidas = 3; 
     bool controlSonido = false;
     Vector3 target;
+    private float tiempoAtaque = 1.5f;
+    private float siguienteAtaque;
 
     // Start is called before the first frame update
     void Start()
@@ -78,7 +80,10 @@ public class MovimientoAlien : MonoBehaviour
         //si es el enemigo y esta en rago de ataque nos paramos y le atacamos
         if(target != posicionInicial && distancia < radioAtaque && !atacando){
             //aqui le atacariamos
-            animator.SetTrigger("Atacando");
+            if(Time.time > siguienteAtaque){
+                animator.SetTrigger("Atacando");
+                siguienteAtaque = Time.time + tiempoAtaque;
+            }
             
         }
         else{
