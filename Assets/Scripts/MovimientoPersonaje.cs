@@ -15,45 +15,39 @@ public class MovimientoPersonaje : MonoBehaviour
     public int vidas;
     public Inventario inventario;
     public SpriteRenderer objetoRecibidoSprite;
-    public bool cargado;
-    public GameObject herramientaCofres; 
+    public GameObject herramientaCofres;
 
-    private bool primeraCarga;
+    //Gestión joystick
+    public Joystick joystick;
+    public JoyButton joyButton;
+
 
     //Prueba Inicio Mapa Nivel 2
     void Start()
     {
-        primeraCarga = true;
         animator = GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody2D>();
         colliderAtaque = transform.GetChild(0).GetComponent<CircleCollider2D>();
         //Lo desactivamos desde el principio
         colliderAtaque.enabled = false;
-        //Gestionamos la carga de la partida
-        DatosJugador datos = SistemaGuardado.cargarPartida();
-        if (datos != null)
-        {
-            this.llaves = datos.llaves;
-            this.vidas = datos.vidas;
-            this.transform.position = new Vector2(datos.posicion[0], datos.posicion[1]);
-            cargado = true;
-
-        }
-        else
-        {
-            this.llaves = 0;
-            this.vidas = 5;
-            cargado = false;
-        }
+        gestionCargaPartida();
     }
 
     void Update()
     {
-        movimiento = new Vector2(
+        //Joystick (para ejecución en Android)
+        /* if (Application.platform == RuntimePlatform.Android)
+        {
+            movimiento = new Vector2(joystick.Horizontal, joystick.Vertical);
+        }
+        else //Teclas normales AWDS, y flechas (para ejecución en PC)
+        {
+            movimiento = new Vector2(
             Input.GetAxisRaw("Horizontal"),
-            Input.GetAxisRaw("Vertical")
-        );
+            Input.GetAxisRaw("Vertical"));
+        } */
 
+        movimiento = new Vector2(joystick.Horizontal, joystick.Vertical);
         //Solo actualizamos la animación cuando nos estemos moviendo
         if (movimiento != Vector2.zero)
         {
@@ -70,7 +64,7 @@ public class MovimientoPersonaje : MonoBehaviour
         AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
         bool atacando = info.IsName("Jugador_atacando");
         //No dejamos atacar hasta que no termine la animación 
-        if (Input.GetKeyDown(KeyCode.Space) && !atacando)
+        if ((Input.GetKeyDown(KeyCode.Space) || joyButton.pulsado )&& !atacando)
         {
             atacar();
         }
@@ -104,10 +98,28 @@ public class MovimientoPersonaje : MonoBehaviour
         rigidbody.MovePosition(rigidbody.position + movimiento * velocidad * Time.deltaTime);
     }
 
+    //Este método se encarga de gestionar la carga de la partida
+    private void gestionCargaPartida()
+    {
+        //Gestionamos la carga de la partida
+        DatosJugador datos = SistemaGuardado.cargarPartida();
+        if (datos != null)
+        {
+            this.llaves = datos.llaves;
+            this.vidas = datos.vidas;
+            this.transform.position = new Vector2(datos.posicion[0], datos.posicion[1]);
+        }
+        else
+        {
+            this.llaves = 0;
+            this.vidas = 5;
+        }
+    }
+
     public void atacar()
     {
         animator.SetTrigger("atacando");
-        Instantiate(sonido); 
+        Instantiate(sonido);
     }
 
     //Guardamos la partida cuando abrimos un cofre
@@ -143,9 +155,9 @@ public class MovimientoPersonaje : MonoBehaviour
         {
             this.llaves++;
             StartCoroutine(guardar());
-           
+
         }
-        StartCoroutine(pararRecibirObjeto()); 
+        StartCoroutine(pararRecibirObjeto());
     }
 
     IEnumerator pararRecibirObjeto()
