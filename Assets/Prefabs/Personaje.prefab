@@ -271,8 +271,9 @@ MonoBehaviour:
   vidas: 0
   inventario: {fileID: 11400000, guid: 8d742f29441d5b24998bf989e3e812e1, type: 2}
   objetoRecibidoSprite: {fileID: 580724725}
-  cargado: 0
   herramientaCofres: {fileID: 0}
+  joystick: {fileID: 0}
+  joyButton: {fileID: 0}
 --- !u!114 &4637084811372577041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,10 +286,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 416c7444b16ac03429434bca09c3b8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  personaje: {fileID: 0}
-  corazones: []
-  corazonLleno: {fileID: 0}
-  corazonVacio: {fileID: 0}
+  personaje: {fileID: 3055766287465526016}
+  corazones:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  corazonLleno: {fileID: 21300006, guid: 7c9f03cfb26eedf4dbbbfd47c4c4e241, type: 3}
+  corazonVacio: {fileID: 21300014, guid: 7c9f03cfb26eedf4dbbbfd47c4c4e241, type: 3}
 --- !u!95 &3055766287465526028
 Animator:
   serializedVersion: 3

@@ -47,7 +47,10 @@ public class MovimientoPersonaje : MonoBehaviour
             Input.GetAxisRaw("Vertical"));
         }  */
 
-        movimiento = new Vector2(joystick.Horizontal, joystick.Vertical);
+        movimiento = new Vector2(
+            Input.GetAxisRaw("Horizontal"),
+            Input.GetAxisRaw("Vertical"));
+        //movimiento = new Vector2(joystick.Horizontal, joystick.Vertical);
         //Solo actualizamos la animación cuando nos estemos moviendo
         if (movimiento != Vector2.zero)
         {
@@ -121,14 +124,7 @@ public class MovimientoPersonaje : MonoBehaviour
         animator.SetTrigger("atacando");
         Instantiate(sonido);
     }
-
-    //Guardamos la partida cuando abrimos un cofre
-    IEnumerator guardar()
-    {
-        yield return new WaitForSeconds(.3f);
-        SistemaGuardado.guardarPartida(this, SceneManager.GetActiveScene().name);
-    }
-
+  
     public void getHit(int damage)
     {
         vidas -= damage;
@@ -154,8 +150,6 @@ public class MovimientoPersonaje : MonoBehaviour
         if (inventario.objeto.llave)
         {
             this.llaves++;
-            StartCoroutine(guardar());
-
         }
         StartCoroutine(pararRecibirObjeto());
     }
@@ -173,5 +167,32 @@ public class MovimientoPersonaje : MonoBehaviour
         yield return new WaitForSeconds(.3f);
         herramientaCofres.GetComponent<GestionCofresAbiertos>().guardar();
         herramientaCofres.GetComponent<GestionCofresAbiertos>().actualizarEstado();
+        gestionarDescompensacionLlaves();
+    }
+
+    //Este método es debido a que cuando utilizamos la interfaz táctil, cuando recibimos una llave de
+    //un cofre, parece que registra más pulsaciones de lo normal y recoge más de una llave. Con el espacio
+    //todo funciona correctamente
+    private void gestionarDescompensacionLlaves()
+    {
+        //Las llaves serán igual al número de cofres abiertos
+        int contadorAbiertos = 0;
+        for (int i = 0; i < herramientaCofres.GetComponent<GestionCofresAbiertos>().listaCofresenMapa.Length; i++)
+        {
+            //Si no está activo es que está abierto
+            if (!herramientaCofres.GetComponent<GestionCofresAbiertos>().listaCofresenMapa[i].activeSelf)
+            {
+                contadorAbiertos++;
+            }
+        }
+        this.llaves = contadorAbiertos;
+        StartCoroutine(guardar());
+    }
+
+    //Guardamos la partida cuando abrimos un cofre y arreglamos las llaves si estamos jugando en móvil
+    IEnumerator guardar()
+    {
+        yield return new WaitForSeconds(.3f);
+        SistemaGuardado.guardarPartida(this, SceneManager.GetActiveScene().name);
     }
 }

@@ -15,7 +15,7 @@ public class GestionCofresAbiertos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void actualizarEstado()
@@ -25,16 +25,14 @@ public class GestionCofresAbiertos : MonoBehaviour
         {
             Debug.Log("No ha devuelto nada");
         }
-        for (int i = 0; i < estado.Length; i++)
+        else
         {
-            Debug.Log(estado[i]);
-        }
-    
-        for (int i = 0; i < listaCofresenMapa.Length; i++)
-        {
-            if (!estado[i])
+            for (int i = 0; i < listaCofresenMapa.Length; i++)
             {
-                listaCofresenMapa[i].SetActive(false);
+                if (!estado[i])
+                {
+                    listaCofresenMapa[i].SetActive(false);
+                }
             }
         }
     }
@@ -48,11 +46,12 @@ public class GestionCofresAbiertos : MonoBehaviour
             if (!listaCofresenMapa[i].activeSelf)
             {
                 estadoCofres[i] = false;
-            }else
+            }
+            else
             {
                 estadoCofres[i] = true;
             }
         }
-        SistemaGuardadoCofres.guardarEstadoCofres(estadoCofres);    
+        SistemaGuardadoCofres.guardarEstadoCofres(estadoCofres);
     }
 }

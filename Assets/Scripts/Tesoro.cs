@@ -9,6 +9,9 @@ public class Tesoro : MonoBehaviour
     public bool abierto;
     public Signal lanzarSignalObjeto;
     public bool enRango;
+    //Necesario para la interfaz móvil
+    public JoyButton joyButton;
+
  
 
     private Animator animator;
@@ -22,7 +25,7 @@ public class Tesoro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && enRango)
+        if ((Input.GetKeyDown(KeyCode.Space) || joyButton.pulsado) && enRango)
         {
             if (!abierto)
             {
@@ -45,11 +48,10 @@ public class Tesoro : MonoBehaviour
 
     public void abrirCofre()
     {
-        
+        abierto = true;
         inventarioJugador.addObjeto(contenido);
         inventarioJugador.objeto = contenido;
         lanzarSignalObjeto.raise();
-        abierto = true;
         animator.SetBool("abierto",true); 
         StartCoroutine(borrarCofre());
     }
