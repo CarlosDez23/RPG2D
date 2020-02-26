@@ -36,7 +36,7 @@ public class MovimientoPersonaje : MonoBehaviour
     void Update()
     {
         //Joystick (para ejecución en Android)
-        /* if (Application.platform == RuntimePlatform.Android)
+         /* if (Application.platform == RuntimePlatform.Android)
         {
             movimiento = new Vector2(joystick.Horizontal, joystick.Vertical);
         }
@@ -45,7 +45,7 @@ public class MovimientoPersonaje : MonoBehaviour
             movimiento = new Vector2(
             Input.GetAxisRaw("Horizontal"),
             Input.GetAxisRaw("Vertical"));
-        } */
+        }  */
 
         movimiento = new Vector2(joystick.Horizontal, joystick.Vertical);
         //Solo actualizamos la animación cuando nos estemos moviendo
