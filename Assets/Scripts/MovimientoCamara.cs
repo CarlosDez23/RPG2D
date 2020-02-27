@@ -13,16 +13,17 @@ public class MovimientoCamara : MonoBehaviour
     void Start()
     {
         //Forzamos la resolución de la pantalla
-        Screen.SetResolution(800,800,true); 
+        //Screen.SetResolution(800,800,true); 
+        //Camera.main.projectionMatrix = Matrix4x4.Ortho(-5.0f * 1.6f , 5.0f * 1.6f, -5.0f, 0.5f, 0.3f, 1000f);
     }
 
     
     void Update()
     {
-        if (!Screen.fullScreen || Camera.main.aspect != 1)
+       /* if (!Screen.fullScreen || Camera.main.aspect != 1)
         {
             Screen.SetResolution(800,800,true); 
-        }
+        }*/
 
         //Le dejamos al jugador salir de la pantalla completa
         if (Input.GetKey(KeyCode.Escape))
