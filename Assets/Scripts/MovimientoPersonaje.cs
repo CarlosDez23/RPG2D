@@ -31,6 +31,10 @@ public class MovimientoPersonaje : MonoBehaviour
         //Lo desactivamos desde el principio
         colliderAtaque.enabled = false;
         gestionCargaPartida();
+        if (SceneManager.GetActiveScene().name.Equals("Nivel2"))
+        {
+            StartCoroutine(guardar());
+        }
     }
 
     void Update()
@@ -189,5 +193,14 @@ public class MovimientoPersonaje : MonoBehaviour
     {
         yield return new WaitForSeconds(.3f);
         SistemaGuardado.guardarPartida(this, SceneManager.GetActiveScene().name);
+    }
+
+    public void pasarNivel()
+    {
+        float[] posicion = new float[3];
+        posicion[0] = -9.4f;
+        posicion[1] = 12.4f;
+        posicion[2] = 0;
+        SistemaGuardado.gestionTransicionEscena(this.llaves, this.vidas,posicion, "Nivel2");
     }
 }

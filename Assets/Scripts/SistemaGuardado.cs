@@ -28,6 +28,28 @@ public static class SistemaGuardado
         }
     }
 
+    public static void gestionTransicionEscena(int llaves, int vidas, float[] posicion, string escena)
+    {
+        FileStream stream = null;
+        try
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            //Con persistent data path accedemos a la persistencia de cualquier sistema operativo
+            string ruta = Application.persistentDataPath + "/estadojugador.data";
+            stream = new FileStream(ruta, FileMode.Create);
+            DatosJugador datos = new DatosJugador(llaves, vidas,  posicion,escena);
+            formatter.Serialize(stream, datos);
+        }
+        catch (IOException)
+        {
+            Debug.Log("Fallo al guardar la partida");
+        }
+        finally
+        {
+            stream.Close();
+        }
+    }
+
     //Método para guardar la partida
     public static DatosJugador cargarPartida()
     {

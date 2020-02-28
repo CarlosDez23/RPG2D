@@ -10,6 +10,8 @@ public class PasoANivel2 : MonoBehaviour
     {
         if (other.tag.Equals("Player") && other.GetComponent<MovimientoPersonaje>().llaves == 6)
         {
+            //SceneManager.LoadScene("Nivel2");
+            other.GetComponent<MovimientoPersonaje>().pasarNivel();
             SceneManager.LoadScene("Nivel2");
         }
     }
