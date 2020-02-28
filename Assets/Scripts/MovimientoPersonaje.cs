@@ -202,5 +202,6 @@ public class MovimientoPersonaje : MonoBehaviour
         posicion[1] = 12.4f;
         posicion[2] = 0;
         SistemaGuardado.gestionTransicionEscena(this.llaves, this.vidas,posicion, "Nivel2");
+        SistemaGuardadoCofres.borrarPartida();
     }
 }
