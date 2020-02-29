@@ -18,7 +18,7 @@ public class MovimientoDragon : MonoBehaviour
     private float tiempoAtaque = 1f;
     private float siguienteAtaque;
 
-    private int vidas = 5; 
+    private int vidas = 15; 
 
     // Start is called before the first frame update
     void Start()

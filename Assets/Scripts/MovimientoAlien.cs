@@ -18,7 +18,7 @@ public class MovimientoAlien : MonoBehaviour
     private int vidas = 3; 
     bool controlSonido = false;
     Vector3 target;
-    private float tiempoAtaque = 1.5f;
+    private float tiempoAtaque = 1.8f;
     private float siguienteAtaque;
 
     // Start is called before the first frame update
@@ -145,7 +145,8 @@ public class MovimientoAlien : MonoBehaviour
         yield return new WaitForSeconds(.3f);
         this.gameObject.SetActive(false);
         Destroy(this, 0.5f); 
-        Destroy(sonido);
+        //Destroy(sonido);
+        sonido.Stop();
     }
 
 }
