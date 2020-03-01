@@ -9,6 +9,7 @@ public class MusicaFinal : MonoBehaviour
 
      public AudioSource sonidoFinal;
      public bool escaleras;
+     public Collider2D bloqueo;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -16,6 +17,7 @@ public class MusicaFinal : MonoBehaviour
         {
             
             if(escaleras){
+                bloqueo.enabled = false;
                 sonidoPrincipal.Stop();
                 sonidoFinal.Play();
             }else{
