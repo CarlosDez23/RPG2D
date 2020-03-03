@@ -31,10 +31,18 @@ public class MovimientoPersonaje : MonoBehaviour
         //Lo desactivamos desde el principio
         colliderAtaque.enabled = false;
         gestionCargaPartida();
-        if (SceneManager.GetActiveScene().name.Equals("Nivel2"))
+        StartCoroutine(guardar());
+
+        if (Application.platform == RuntimePlatform.Android)
         {
-            StartCoroutine(guardar());
+            joystick.enabled = true;
+            joyButton.enabled  = true;
+        }else
+        {
+            joystick.enabled = false;
+            joyButton.enabled  = false;
         }
+
     }
 
     void Update()
@@ -49,7 +57,7 @@ public class MovimientoPersonaje : MonoBehaviour
             movimiento = new Vector2(
             Input.GetAxisRaw("Horizontal"),
             Input.GetAxisRaw("Vertical"));
-        }  
+        }
         //Solo actualizamos la animación cuando nos estemos moviendo
         if (movimiento != Vector2.zero)
         {
@@ -66,7 +74,7 @@ public class MovimientoPersonaje : MonoBehaviour
         AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
         bool atacando = info.IsName("Jugador_atacando");
         //No dejamos atacar hasta que no termine la animación 
-        if ((Input.GetKeyDown(KeyCode.Space) || joyButton.pulsado )&& !atacando)
+        if ((Input.GetKeyDown(KeyCode.Space) || joyButton.pulsado) && !atacando)
         {
             atacar();
         }
@@ -123,7 +131,7 @@ public class MovimientoPersonaje : MonoBehaviour
         animator.SetTrigger("atacando");
         Instantiate(sonido);
     }
-  
+
     public void getHit(int damage)
     {
         vidas -= damage;
@@ -201,7 +209,7 @@ public class MovimientoPersonaje : MonoBehaviour
         posicion[0] = -9.4f;
         posicion[1] = 12.4f;
         posicion[2] = 0;
-        SistemaGuardado.gestionTransicionEscena(this.llaves, this.vidas,posicion, "Nivel2");
+        SistemaGuardado.gestionTransicionEscena(this.llaves, this.vidas, posicion, "Nivel2");
         SistemaGuardadoCofres.borrarPartida();
     }
 }
