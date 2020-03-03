@@ -13,7 +13,7 @@ public class MusicaFinal : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag.Equals("Player") && other.GetComponent<MovimientoPersonaje>().llaves == 13)
+        if (other.tag.Equals("Player") && other.GetComponent<MovimientoPersonaje>().llaves == 7)
         {
             
             if(escaleras){
